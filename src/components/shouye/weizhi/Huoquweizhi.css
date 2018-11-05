@@ -1,0 +1,50 @@
+.once{
+    width: 100vw;
+    height: 100vh;
+    background: #f3f3f3;
+}
+.one_se_tip{
+    width: 100vw;
+    height: 0.6rem;
+    background: #f3f3f3;
+    font-size:0.28rem;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    line-height:0.6rem;
+    padding-top: 0.3rem;
+    text-indent: 0.32rem;
+}
+.one_se_wz ul{
+    overflow: hidden;
+    display: flex;
+    justify-content:space-between;
+    
+}
+.one_se_wz {
+   background: #ffffff;
+}
+.one_se_shu{
+    float: left;
+    font-weight:500;
+    font-size:0.32rem;
+    line-height: 0.82rem;
+    color:rgba(51,51,51,1);
+    text-indent: 0.32rem;
+}
+.one_se_zuo {
+    float: right;
+    line-height: 0.4rem;
+    font-weight:400;
+    color:rgba(91,181,77,1);
+    margin-right: 0.32rem;
+}
+.one_se_zuo i{
+    margin-right: 0.12rem;
+}
+.one_se_zuo span{
+    
+    font-size:0.28rem;
+}
+.bor{
+border-top:1px solid #f3f3f3 ;
+}

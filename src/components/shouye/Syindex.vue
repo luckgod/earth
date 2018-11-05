@@ -1,12 +1,12 @@
 <template>
   <div>
    <div class="onese">
-     <div class="fll dingwei">
+     <div class="fll dingwei" @click="jump">
        <i class="iconfont icon-Group-"></i>
        <span class="weizhi">德信产业园</span>
        <i class="iconfont icon-xiangxia smell"></i>
      </div>
-     <div class="flr ser">
+     <div class="flr ser" @click="jumpa">
       <input type="text" placeholder="搜索你想要的商品">
      </div>
    </div>
@@ -236,8 +236,20 @@ export default {
     return {
       msg: 'moban'
     }
-  }
-  
+  },
+  methods:{
+    jump(){
+    //this.$router.push("/cart")
+    //传递的参数用{{ $route.query.goodsId }}获取
+    this.$router.push({path:'/huoquweizhi'})
+    //this.$router.go(-2)
+    //后退两步
+    },
+    jumpa(){
+      this.$router.push({path:'/shangpinsousu'})
+    }
+
+}
 }
 
 </script>
@@ -303,6 +315,10 @@ border-radius:0.2rem;
    text-indent: 0.1rem;
  
 }
+input::-webkit-input-placeholder {
+ 
+     color: #ffffff;
+ }
 .twosela{
   font-size: 0.38rem;
 }
@@ -357,9 +373,7 @@ border-radius:0.2rem;
   text-indent:0.08rem;
   
 }
-.card_rimg{
-  
-}
+
 .card_rimg img{
   width: 1rem;
   height: 1rem;

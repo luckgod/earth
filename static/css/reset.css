@@ -91,10 +91,7 @@ body {
   background-color: #ffffff;
 }
 /* -------------自定义--------------------- */
-input::-webkit-input-placeholder {
-  /* placeholder颜色  */
-     color: #ffffff;
- }
+
  input {
   outline:none;
   }

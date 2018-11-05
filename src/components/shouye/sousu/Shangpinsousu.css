@@ -1,0 +1,62 @@
+.box{
+    width: 94vw;
+    margin: 0.3rem auto;
+   
+    
+}
+.box input{
+    width: 4.4rem;
+    font-size:0.18rem;
+    background: #f0f0f0;
+    height: 0.5rem;
+    border-radius: 0.3rem;
+    float: left;
+    background-image: url(../../../assets/search.png);
+    background-repeat: no-repeat;
+    background-size:0.25rem;
+    background-position:0.3rem center;
+    padding:0 0 0 0.6rem;
+}
+input::-webkit-input-placeholder{
+    color: #a1a1a1;
+ }
+
+.search{
+   
+    float: right;
+    font-size:0.26rem;
+    color: black;
+    text-align: center;
+    line-height:0.52rem;
+    cursor: pointer;
+    margin-right:0.3rem; 
+}
+.two{
+  
+    line-height: 0.7rem;
+    font-size:0.26rem;
+    text-indent: 0.36rem;
+    
+}
+.two_oul{
+    overflow: hidden;
+}
+.two_re{
+    font-weight:400;
+}
+.two_oli{
+    float: left;
+}
+.two_oli span{
+    display: inline-block;
+    background: #f0f0f0;
+    color: #4b4b4b;
+    padding-right:0.26rem;
+    font-size:0.26rem;
+    line-height: 0.46rem;
+    text-indent: 0.26rem;
+    border-radius:0.24rem; 
+}
+.mar{
+    margin-top: 0.4rem;
+}
