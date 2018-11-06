@@ -6,6 +6,7 @@ import Shangpinsousu from '../components/shouye/sousu/Shangpinsousu.vue'
 import Shangjiaifo from '../components/shouye/shangjiaifo/Shangjiaifo.vue'
 import Miaoshashangpin from '../components/shouye/miaosha/Miaoshashangpin.vue'
 import Tejiashangpin from '../components/shouye/tejia/Tejiashangpin.vue'
+import Quanbumendian from '../components/quanbumendian/Quanbumendian.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -33,6 +34,10 @@ export default new Router({
     {
       path:'/tejiashangpin',
       component:Tejiashangpin
+    },
+    {
+      path:'/quanbumendian',
+      component:Quanbumendian
     },
     {
       path:'*',

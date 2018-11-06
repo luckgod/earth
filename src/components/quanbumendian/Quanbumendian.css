@@ -1,0 +1,48 @@
+.mencar{
+    width: 92vw;
+    margin: 0.12rem auto;
+    height: 2rem;
+    box-shadow:0 0 0.1rem #99999959;
+}
+.mendianimg{
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0.2rem;
+}
+.fll{
+    float: left;
+}
+.mencartit{
+    font-size: 0.3rem;
+    line-height: 0.44rem;
+    margin-top: 0.2rem;
+}
+.mencartitwo{
+    font-size: 0.2rem;
+    line-height: 0.46rem;
+}
+.mencartitwo img{
+    display: inline-block;
+    width:0.22rem ;
+    height:0.38rem ;
+    margin-right: 0.2rem;
+    
+}
+.mencartitwo span:nth-child(2){
+    color: #6eab65;
+}
+.mencartitwo span:nth-child(3){
+    padding-left: 0.38rem;
+}
+.mencartithe{
+    font-size: 0.18rem;
+    color: #999999;
+}
+.mencartithe span:nth-child(2){
+    padding-left: 1.8rem;
+}
+.mencartifour{
+    font-size: 0.22rem;
+    line-height: 0.7rem;
+    color:  #666666;
+}
