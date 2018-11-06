@@ -31,8 +31,8 @@
   <div class="card">
     <div class="fll">
       <ul>
-        <li class="card_hea">
-          <span >太阳公社水天成分店 <i class="iconfont icon-right "></i></span>
+        <li class="card_hea"  @click="jumpb">
+          <span>太阳公社水天成分店 <i class="iconfont icon-right "></i></span>
         </li>
         <li class="card_se">
           <img src="../../assets/buluo.jpg" alt="">
@@ -101,7 +101,7 @@
         <span class="miaosha_hea_b">02</span>
         
       </li>
-      <li class="flr miaosha_hea_r">
+      <li class="flr miaosha_hea_r" @click="jumpc">
           <span>更多</span>
           <i class="iconfont icon-right "></i>
       </li>
@@ -150,7 +150,7 @@
         <span>特价商品</span>
         <i class="iconfont icon-boluo"></i>
       </li>
-      <li class="flr miaosha_hea_r">
+      <li class="flr miaosha_hea_r" @click="jumpd">
           <span>更多</span>
           <i class="iconfont icon-right "></i>
       </li>
@@ -247,7 +247,16 @@ export default {
     },
     jumpa(){
       this.$router.push({path:'/shangpinsousu'})
-    }
+    },
+    jumpb(){
+      this.$router.push({path:'/Shangjiaifo'})
+    },
+    jumpc(){
+      this.$router.push({path:'/miaoshashangpin'})
+    },
+    jumpd(){
+      this.$router.push({path:'/tejiashangpin'})
+    },
 
 }
 }
