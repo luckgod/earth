@@ -1,0 +1,73 @@
+.tit{
+    width: 100vw;
+    height: 0.78rem;
+    margin-top: 0.29rem;
+   /* border: 1px solid #0000; */
+    overflow: hidden;
+}
+.zitia{
+    float: left;
+    font-size: 0.42rem;
+    line-height: 0.78rem;
+    padding-left:0.2rem; 
+}
+.zitib{
+    float:right;
+    font-size: 0.42rem;
+    padding-right:0.2rem; 
+    line-height: 0.78rem;
+   
+}
+.zitib:hover{
+    color: #f5ab28;
+}
+/*  */
+.kimg{
+    width:100vw;
+    height:5.6rem;
+}
+.se{
+    text-indent: 0.32rem;
+}
+.proname{
+    font-size: 0.32rem;
+    line-height: 0.9rem;
+    font-weight:600; 
+   
+}
+
+.projia{
+    font-size: 0.24rem;
+    line-height: 0.33rem;
+    color:  #999999;
+}
+.projifen{
+    font-size: 0.32rem;
+    color: #FA302E;
+    font-weight:600; 
+    line-height: 0.9rem;
+}
+/*  */
+.sea p{
+    text-indent: 0.32rem;
+}
+.sea ul li{
+    margin-top: -0.12rem;
+} 
+.kimga{
+    width:100vw;
+}
+/*  */
+.footer{
+width: 100vw;
+height: 0.98rem;
+position:fixed;
+bottom: 0;
+background: #cccccc;
+color: #ffffff;
+text-align: center;
+}
+.zuihou{
+    font-size:0.32rem ;
+    line-height:0.98rem ;
+}

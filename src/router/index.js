@@ -11,6 +11,8 @@ import Qianggouxiangqing from '../components/shouye/qianggou/Qianggouxiangqing.v
 import Laingdanghuodong from '../components/shouye/liangdaong/Laingdanghuodong.vue'
 import Fenlei from '../components/shouye/fenleiaa/Fenlei.vue'
 import Jifenshangcheng from '../components/shouye/jifen/Jifenshangcheng.vue'
+import Jfenduihuan from '../components/jifendui/Jfenduihuan.vue'
+import Jfenduihuantwo from '../components/jifenduitwo/Jfenduihuantwo.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -58,6 +60,14 @@ export default new Router({
     {
       path:'/jifenshangcheng',
       component:Jifenshangcheng
+    },
+    {
+      path:'/jfenduihuan',
+      component:Jfenduihuan
+    },
+    {
+      path:'/jfenduihuantwo',
+      component:Jfenduihuantwo
     },
     {
       path:'*',

@@ -18,39 +18,43 @@
     <div>
       <div class="duihua">
         <ul>
-          <li class="kau">
-            <img  class="jiimg" src="../../../assets/logo.png" alt="">
-            <p class="jiname">水果拼盘</p>
-            <p class="jinaf">100积分</p>
-          </li>
-          <li class="kau">
-            <img  class="jiimg" src="../../../assets/logo.png" alt="">
-            <p class="jiname">水果拼盘</p>
-            <p class="jinaf">100积分</p>
-          </li>
-          <li class="kau">
-            <img  class="jiimg" src="../../../assets/logo.png" alt="">
-            <p class="jiname">水果拼盘</p>
-            <p class="jinaf">100积分</p>
-          </li>
-          <li class="kau">
-            <img  class="jiimg" src="../../../assets/logo.png" alt="">
-            <p class="jiname">水果拼盘</p>
-            <p class="jinaf">100积分</p>
-          </li>
-          <li class="kau">
-            <img  class="jiimg" src="../../../assets/logo.png" alt="">
-            <p class="jiname">水果拼盘</p>
-            <p class="jinaf">100积分</p>
-          </li>
-          <li class="kau">
-            <img  class="jiimg" src="../../../assets/logo.png" alt="">
-            <p class="jiname">水果拼盘</p>
-            <p class="jinaf">100积分</p>
-          </li>
+          <router-link tag="li" class="kau" :to="{path:'/jfenduihuan'}">
          
+            <img  class="jiimg" src="../../../assets/logo.png" alt="">
+            <p class="jiname">水果拼盘</p>
+            <p class="jinaf">100积分</p>
+          </router-link>
+          <router-link tag="li" class="kau" :to="{path:'/jfenduihuan'}">
          
-          
+            <img  class="jiimg" src="../../../assets/logo.png" alt="">
+            <p class="jiname">水果拼盘</p>
+            <p class="jinaf">100积分</p>
+          </router-link>
+          <router-link tag="li" class="kau" :to="{path:'/jfenduihuan'}">
+         
+            <img  class="jiimg" src="../../../assets/logo.png" alt="">
+            <p class="jiname">水果拼盘</p>
+            <p class="jinaf">100积分</p>
+          </router-link>
+          <router-link tag="li" class="kau" :to="{path:'/jfenduihuan'}">
+         
+            <img  class="jiimg" src="../../../assets/logo.png" alt="">
+            <p class="jiname">水果拼盘</p>
+            <p class="jinaf">100积分</p>
+          </router-link>
+          <router-link tag="li" class="kau" :to="{path:'/jfenduihuan'}">
+         
+            <img  class="jiimg" src="../../../assets/logo.png" alt="">
+            <p class="jiname">水果拼盘</p>
+            <p class="jinaf">100积分</p>
+          </router-link>
+          <router-link tag="li" class="kau" :to="{path:'/fenlei'}">
+         
+            <img  class="jiimg" src="../../../assets/logo.png" alt="">
+            <p class="jiname">水果拼盘</p>
+            <p class="jinaf">100积分</p>
+          </router-link>
+                  
         </ul>
       </div>
     </div>
