@@ -11,7 +11,7 @@
      </div>
    </div>
     <div class="twose">
-        <div class="fll twosel">
+        <div class="fll twosel" @click="jumpf">
           <span class="twosela">1200积分</span>
           <span class="twoselb">=12元</span>
         </div>
@@ -74,11 +74,11 @@
         </div>
         <span>水产海鲜</span>
       </li>
-      <li>
-        <div>
+      <li @click="jumpg">
+        <div >
             <i class="iconfont icon-wodeyouhuijuan"></i>
         </div>
-        <span>水果</span>
+        <span >更多</span>
       </li>
     </ul>
   </div>
@@ -193,7 +193,7 @@
 </div>
 <!-- 限时秒杀 -->
 <div class="xianshimiaosha neiyinying">
-  <img src="../../assets/lunbosucia1.jpg" alt="">
+  <img src="../../assets/lunbosucia1.jpg" alt="" @click="jumpe">
   <div class="xianshi_dingwei">
     <div class="miaosha_pro">
     <ul class="slide-box">
@@ -257,7 +257,15 @@ export default {
     jumpd(){
       this.$router.push({path:'/tejiashangpin'})
     },
-
+    jumpe(){
+      this.$router.push({path:'/laingdanghuodong'})
+    },
+    jumpg(){
+      this.$router.push({path:'/fenlei'})
+    },
+     jumpf(){
+      this.$router.push({path:'/jifenshangcheng'})
+    }
 }
 }
 

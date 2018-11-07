@@ -1,0 +1,116 @@
+.serash{
+    width: 86vw;
+    height: 0.82rem;
+    margin: 0 auto;
+    position: relative;
+    /* border: 1px solid #000000; */
+    margin-top:-0.4rem; 
+}
+.dingwei{
+   
+    overflow: hidden;
+    height: 0.82rem;
+    position: fixed;
+    background: #ffffff;
+    width: 100vw;
+}
+.serash input{
+    width: 5.5rem;
+    height:0.5rem ;
+    font-size: 0.24rem; 
+    text-indent: 0.3rem;
+    background: #eeeeee;
+    border-radius:0.25rem; 
+    margin-top: -2rem;
+     
+}
+.liebiao{
+    background: #eeeeee;
+    width: 1.6rem;
+    height:10.8rem ;
+    position:fixed;
+    left: 0;
+    top:0.83rem ;
+    font-size: 0.24rem;
+    line-height: 0.92rem;
+    text-align: center;
+}
+.shju{
+    width: 4.6rem; 
+   
+    float: right;
+    margin-top: 0.8rem;
+}
+.shjutu img{
+    width:4.6rem;
+    height:1.2rem;
+}
+
+.slide-box{
+    background: #f4f4f4;
+    display: -webkit-box;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling:touch;
+   
+}
+.slide-box::-webkit-scrollbar{
+display:none;
+}
+.slide-item{
+    font-size: 0.22rem;
+    padding-left: 0.38rem;
+    padding-right:0.38rem;
+    line-height: 0.48rem;
+}
+/*  */
+
+.proaoul{
+    
+    overflow: hidden;
+}
+.proaoula{
+    width: 1.6rem;
+    float: left;
+
+}
+.proaoulb{
+   
+    float: left;
+    margin-left: 0.2rem;
+
+}
+.proaomg{
+    width: 1.6rem;
+    height:1.4rem;
+    margin: 0.2rem 0;
+}
+
+.proatit{
+    font-size: 0.28rem;
+    line-height:0.6rem;
+    color:#333333; 
+    
+}
+.proatit span{
+    font-weight:400;
+}
+.proayishou{
+    font-size: 0.24rem;
+    line-height:0.6rem;
+    color:#9B9B9B; 
+}
+.proaqian{
+    font-size: 0.26rem;
+    line-height:0.4rem;
+   
+}
+.proaqian span{
+    color: #FA302E;
+    font-weight:600;
+}
+.ziti{
+    font-size: 0.3rem;
+    line-height:0.6rem;
+    color: #ffa44d;
+    padding-left: 0.8rem;
+}

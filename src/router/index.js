@@ -7,6 +7,10 @@ import Shangjiaifo from '../components/shouye/shangjiaifo/Shangjiaifo.vue'
 import Miaoshashangpin from '../components/shouye/miaosha/Miaoshashangpin.vue'
 import Tejiashangpin from '../components/shouye/tejia/Tejiashangpin.vue'
 import Quanbumendian from '../components/quanbumendian/Quanbumendian.vue'
+import Qianggouxiangqing from '../components/shouye/qianggou/Qianggouxiangqing.vue'
+import Laingdanghuodong from '../components/shouye/liangdaong/Laingdanghuodong.vue'
+import Fenlei from '../components/shouye/fenleiaa/Fenlei.vue'
+import Jifenshangcheng from '../components/shouye/jifen/Jifenshangcheng.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -38,6 +42,22 @@ export default new Router({
     {
       path:'/quanbumendian',
       component:Quanbumendian
+    },
+    {
+      path:'/qianggouxiangqing',
+      component:Qianggouxiangqing
+    },
+    {
+      path:'/laingdanghuodong',
+      component:Laingdanghuodong
+    },
+    {
+      path:'/fenlei',
+      component:Fenlei
+    },
+    {
+      path:'/jifenshangcheng',
+      component:Jifenshangcheng
     },
     {
       path:'*',

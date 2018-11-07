@@ -1,0 +1,310 @@
+.miaosh-he{
+    width: 100vw;
+    height: 0.72rem;
+    background: #ff6766;
+    color: #ffffff;
+    line-height: 0.72rem;
+    font-size: 0.24rem;
+    padding-left: 0.2rem;
+    box-sizing:border-box; 
+    position: relative; 
+}
+.miaosh_her{
+    display: inline-block;
+    margin-left: 1.8rem;
+}
+.shijian{
+    width:2rem;
+    height:0.36rem ;
+    position: absolute;
+    right: 0.2rem;
+    top: 0.16rem;
+    line-height: 0.42rem;
+}
+.shangpinxiangqing{
+    width: 100vw;
+    height: 6.2rem;
+    position: relative;
+}
+.lunbo_two{
+    width: 100vw;
+    height: 6.2rem;
+}
+.lunboli_two img{
+    width: 100vw;
+    height: 6.2rem;
+}
+.fanhui{
+    position: absolute;
+    font-size: 0.35rem;
+    top: 0.2rem;
+    left:0.2rem;
+}
+.shijiana{
+    display: inline-block;
+    width: 0.52rem;
+    height:0.36rem ;
+    background: #ffffff;
+    color: #ff6766;
+    text-align: center;
+    border-radius: 0.06rem;
+}
+.shangpinxiangqing_three{
+    margin:0  0.32rem;
+    position: relative;
+}
+.shangpinxiangqing_three_name{
+    font-size: 0.3rem;
+    line-height: 0.76rem;
+    font-weight:600;
+    color:  #333333;
+   
+}
+.shangpinxiangqing_three_jianjie{
+    font-size: 0.22rem;
+    line-height: 0.24rem;
+    color:  #9B9B9B;
+}
+.shangpinxiangqing_three_jiage{
+    line-height: 0.4rem;
+}
+.shangpinxiangqing_three_jiage span:nth-child(1){
+
+    font-size: 0.22rem;
+    font-weight:600;
+    color:  #FA302E;
+
+}
+.shangpinxiangqing_three_jiage span:nth-child(2){
+    font-size: 0.14rem;
+    text-decoration: line-through;
+    color:  #999999;
+    padding-left: 0.4rem;
+}
+.shangpinxiangqing_three_jiage span:nth-child(3){
+    font-size: 0.2rem;
+    padding-left: 3rem;
+    color:  #333333;
+}
+.gouwu{
+    position: absolute;
+    top: 0.36rem;
+    right:0.26rem ;
+    font-size: 0.4rem;
+    color: #edaf28;
+
+}
+
+/*  */
+.tuijianshangpin{
+    margin:0  0.3rem;
+}
+.tuijianshangpin-tit{
+    font-size:0.28rem ;
+    font-weight:900;
+    line-height: 0.8rem;    
+}
+.miaosha_pro ul li div img{
+    display: inline-block;
+    text-align: center;
+    width: 1.78rem;
+    height:1.62rem;
+  }
+  .slide-box{
+        display: -webkit-box;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling:touch;
+             
+  }
+  .slide-box::-webkit-scrollbar{
+    display:none;
+  }
+  .slide-box-oli{
+    width: 32vw;
+   
+    text-align: center;
+  }
+  .slide-box-na{
+    line-height:0.66rem; 
+    font-size: 0.24rem;
+  }
+  .slide-box-sho{
+    overflow: hidden;
+    line-height: 0.5rem;
+  }
+  .slide-box-sho span{
+    color: #f6302f;
+    font-weight: 600;
+     font-size: 0.24rem;
+  
+    text-indent: 0.1rem;
+  }
+  .slide-box-sho i{
+    margin-right:0.36rem;
+    color:#ffa550; 
+  
+  }
+  .fll{
+      float: left;
+  }
+  .flr{
+      float: right;
+  }
+  /* four */
+  .shangpinxiangqing_four{
+    margin-bottom: 0.98rem;
+  }
+  .shangpinxiangqing_four p{
+      font-size: 0.3rem;
+      text-indent: 0.32rem;
+      line-height:0.8rem ;
+
+  }
+  .shangpinxiangqing_four_img ul li{
+    width: 100vw;
+    height:4rem;
+    overflow: hidden;
+  }
+  .shangpinxiangqing_four_img ul li img{
+    width: 100vw;
+    height:4rem;
+  }
+  /* five */
+  .shangpinxiangqing_five{
+      
+      width: 100vw;
+      height: 0.98rem;
+      position: fixed;
+      bottom: 0;
+      background: #ffffff;
+      line-height: 0.4rem;
+      box-shadow:0 0.01rem 0.2rem #9c9c9c ;
+  }
+  .shangpinxiangqing_five span:nth-child(3){
+    font-size: 0.24rem;
+    font-weight: 400;
+    color: #ffffff;
+    background:#f5a623 ;
+    padding:0.12rem 0.3rem ;
+    border-radius:0.16rem;
+    margin-left: 0.6rem;
+  } 
+  .shangpinxiangqing_five span:nth-child(4){
+    font-size: 0.24rem;
+    font-weight: 400;
+    color: #ffffff;
+    background:#7ed320 ;
+    padding:0.12rem 0.3rem;
+    border-radius:0.16rem; 
+  } 
+  .zitifivk{
+    font-size: 0.4rem;
+    color: #9c9c9c;
+    box-shadow:0 0.01rem 0.1rem #9c9c9c ;
+    padding: 0.1rem;
+    border-radius:0.26rem;
+    margin-left: 0.2rem; 
+  }
+  .zitifivc{
+    font-size: 0.4rem;
+    color: #9c9c9c;
+    box-shadow:0 0.01rem 0.1rem #9c9c9c ;
+      padding: 0.1rem;
+      border-radius:0.26rem;
+      position: relative;
+  }
+  .pronum{
+    font-size: 0.2rem;
+    background:#4b8ee7;
+    position: absolute;
+    padding: 0 0.14rem;
+    border-radius :0.3rem;;   
+    top: 0.06rem;
+    left: 1.5rem;
+    color:#ffffff; 
+  }
+  /* tanchaung */
+  .fenxiang{
+      width: 100vw;
+      height: 3.2rem;
+      background: #f4f4f4;
+      padding-top:0.44rem; 
+  }
+  .fenxiang_to {
+    width: 100vw;
+     
+  }
+  .fenxiang_to ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+   
+  }
+  .fenxiang_to ul li{
+     
+  }
+.fenxiang_miao{
+    display: block;
+font-size: 0.12rem;
+text-align: center;
+line-height: 0.6rem;
+
+}
+.fenxiang_bo{
+    font-size: 0.36rem;
+
+}
+.fenxiang_bac{
+
+    line-height: 0.8rem;
+    
+}
+.zitia{
+    font-size: 0.6rem;
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: #20c755;
+    color: #f4f4f4;
+    text-align: center;
+    line-height: 1.2rem;
+    border-radius:0.6rem;  
+}
+.zitib{
+    display: block;
+    font-size: 0.6rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: #20BEA5;
+    color: #f4f4f4;
+    text-align: center;
+    line-height: 1.2rem;
+    border-radius:0.6rem;
+}
+.zitic{
+    display: block;
+    font-size: 0.6rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    text-align: center;
+    background: #ffffff;
+    line-height: 1.2rem;
+    border-radius:0.6rem;
+}
+.fenxiangbtn{
+    width: 100vw;
+    background: #ffffff;
+    text-align: center;
+    
+}
+.fenxiangbtn span{
+    display: inline-block;
+    width: 6rem;
+    height: 0.86rem;
+   background: #f4f4f4;
+    line-height: 0.86rem;
+    font-size: 0.28rem;
+    font-weight:400;
+    margin-bottom:0.2rem; 
+}

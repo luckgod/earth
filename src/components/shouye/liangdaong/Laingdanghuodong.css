@@ -1,0 +1,70 @@
+
+.kimg{
+    width:5.8rem;
+    height:3.8rem;
+}
+
+.lunbo{
+    width:5.8rem;
+    height:3.8rem;
+    margin: 0.36rem auto;
+    box-shadow:0 0.1rem 0.2rem #1d181847;
+}
+
+/* gousu */
+.proa{
+    width: 88vw;
+    height: 2.2rem;
+    margin: 0 auto;
+   
+}
+.proaoul{
+    
+    overflow: hidden;
+}
+.proaoula{
+    width: 1.8rem;
+    float: left;
+
+}
+.proaoulb{
+   
+    float: left;
+    margin-left: 0.3rem;
+
+}
+.proaomg{
+    width: 1.8rem;
+    height:1.6rem;
+    margin: 0.3rem 0;
+}
+
+.proatit{
+    font-size: 0.28rem;
+    line-height:0.88rem;
+    color:#333333; 
+    
+}
+.proatit span{
+    font-weight:400;
+}
+.proayishou{
+    font-size: 0.24rem;
+    line-height:0.68rem;
+    color:#333333; 
+}
+.proaqian{
+    font-size: 0.32rem;
+    line-height:0.8rem;
+   
+}
+.proaqian span{
+    color: #FA302E;
+    font-weight:600;
+}
+.ziti{
+    font-size: 0.36rem;
+    line-height:0.8rem;
+    color: #ffa44d;
+    padding-left: 2.2rem;
+}
