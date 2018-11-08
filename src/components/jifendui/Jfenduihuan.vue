@@ -29,7 +29,7 @@
         </ul>
     </div>
       </div>
-      <div class="footer">
+      <div class="footer" @click="tanchaun">
           <p class="zuihou">兑换</p>
       </div>
       <mt-popup
@@ -46,7 +46,7 @@
                 <p class="maisua">行提货，是否进行兑换？</p>
             </div>
             <div class="btn">
-                <span class="quxiao">取消</span>
+                <span class="quxiao" @click="qux">取消</span>
                 <span class="que">确定</span>
 
             </div>
@@ -63,8 +63,17 @@ export default {
       data () {
     return {
       msg: 'moban',
-      popupVisible:true,
+      popupVisible:false,
     }
+  },
+  methods:{
+      tanchaun(){
+        //   this.$router.push({path:'/shangpinsousu'})
+        this.popupVisible=true
+      },
+      qux(){
+          this.popupVisible=false
+      }
   }
   
 }

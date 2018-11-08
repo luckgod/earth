@@ -1,0 +1,65 @@
+.warp{
+    width: 92vw;
+    height: 2.2rem;
+    margin: 0 auto;
+    border-bottom:1px solid #f0f0f0; 
+}
+.woul{
+    overflow: hidden;
+}
+.itmh{
+    height: 0.7rem;
+    
+   
+    margin-top: -0.4rem;
+}
+.itmht{
+    font-size: 0.28rem;
+    font-weight:600;
+    line-height: 0.7rem;
+}
+.itmhz{
+    font-size: 0.24rem;
+    font-weight:400;
+    line-height: 0.7rem;
+    padding-left: 0.5rem;
+}
+.woula{
+   margin-top: 0.4rem;
+}
+.woulimg img{
+    width:1.2rem ;
+    height: 1.2rem;
+}
+.wouldain{
+    font-size:0.24rem; 
+    font-weight:400;
+    color:rgba(102,102,102,1);
+    line-height:0.33rem;
+}
+.wouliname{
+    font-size:0.24rem; 
+    font-weight:400;
+    color:rgba(102,102,102,1);
+    line-height:0.6rem;
+}
+.woulibianhao{
+    font-size:0.24rem; 
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    line-height:0.33rem;
+}
+.woulifen{
+    font-size:0.26rem; 
+    font-weight:600;
+    text-align: center;
+    color:rgba(245,166,35,1);
+    line-height:1.3rem;
+}
+.woulb{
+    display:flex;
+    justify-content: space-between;
+}
+.yansea{
+    color:#FF5252 ;
+}

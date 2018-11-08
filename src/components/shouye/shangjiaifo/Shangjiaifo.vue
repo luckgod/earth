@@ -5,7 +5,7 @@
 
    
         <mt-navbar v-model="selected">
-            <mt-tab-item id="1"  @click.native.prevent="active = 'tab-container1'">商家</mt-tab-item>
+            <mt-tab-item id="1"  @click.native.prevent="active = 'tab-container1'" >商家</mt-tab-item>
             <mt-tab-item id="2"  @click.native.prevent="active = 'tab-container2'">评价</mt-tab-item>
             <mt-tab-item id="3"  @click.native.prevent="active = 'tab-container3'">领券</mt-tab-item>
         </mt-navbar>
@@ -116,22 +116,22 @@
          </div>
         </mt-tab-container-item>
         <mt-tab-container-item id="tab-container3">
-        	<!-- cell组件 -->
-            <div :class="{youhuijuan:true}">
-                <div :class="{banyuana:true}"></div>
-                <div :class="{banyuanb:true}"></div>
-                <div :class="{youhuijuannei:true}"  >
-                <div :class="{youhuijuanneifenge:true}">
-                    <div :class="{youhuijuanmianzhi:true}">￥10</div>
-                    <div :class="{youhuijuanbtn:true}" >领取</div>
-                    
+        	<!-- juan -->
+            <div class="youhuijuan">
+                <div class="banyuana"></div>
+                <div class="banyuanb"></div>
+                <div class="youhuijuannei"  >
+                    <div class="youhuijuanneifenge">
+                        <div class="youhuijuanmianzhi">￥10</div>
+                        <div class="youhuijuanbtn" >领取</div>
+                        
+                    </div>
+                    <div class="flra">
+                        <p class="youhuijuanmainshua">太阳公社10元新人红包</p>
+                        <p class="youhuijuanmainshub">可与积分同时使用</p>
+                        <p class="youhuijuanmainshub">有效期至2018.9.10</p>
+                    </div>
                 </div>
-                <div :class="{flra:true}">
-                    <p :class="{youhuijuanmainshua:true}">太阳公社10元新人红包</p>
-                    <p :class="{youhuijuanmainshub:true}">可与积分同时使用</p>
-                    <p :class="{youhuijuanmainshub:true}">有效期至2018年9月10日-2018年10月20日</p>
-                </div>
-            </div>
             </div>
             
             

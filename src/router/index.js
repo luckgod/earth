@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Syindex from '../components/shouye/Syindex'
+import Wode from '../components/wode/Wode.vue'
 import Huoquweizhi from '../components/shouye/weizhi/Huoquweizhi.vue'
 import Shangpinsousu from '../components/shouye/sousu/Shangpinsousu.vue'
 import Shangjiaifo from '../components/shouye/shangjiaifo/Shangjiaifo.vue'
@@ -13,6 +14,12 @@ import Fenlei from '../components/shouye/fenleiaa/Fenlei.vue'
 import Jifenshangcheng from '../components/shouye/jifen/Jifenshangcheng.vue'
 import Jfenduihuan from '../components/jifendui/Jfenduihuan.vue'
 import Jfenduihuantwo from '../components/jifenduitwo/Jfenduihuantwo.vue'
+import Fukuanma from '../components/shouye/fukuanm/Fukuanma.vue'
+import Jiaoyimingxi from '../components/jiaoyimingx/Jiaoyimingxi.vue'  
+import Duihuanjilu from '../components/duihuanj/Duihuanjilu.vue'
+import Huiyuanka from '../components/huiyuank/Huiyuanka.vue'
+import Fukuanmaw from '../components/fukuanmw/Fukuanmaw.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -20,6 +27,10 @@ export default new Router({
     {
       path:'/syindex',
       component:Syindex
+    },
+    {
+      path:'/wode',
+      component:Wode
     },
     {
       path:'/huoquweizhi',
@@ -68,6 +79,26 @@ export default new Router({
     {
       path:'/jfenduihuantwo',
       component:Jfenduihuantwo
+    },
+    {
+      path:'/fukuanma',
+      component:Fukuanma
+    },
+    {
+      path:'/jiaoyimingxi',
+      component:Jiaoyimingxi
+    },
+    {
+      path:'/duihuanjilu',
+      component:Duihuanjilu
+    },
+    {
+      path:'/huiyuanka',
+      component:Huiyuanka
+    },
+    {
+      path:'/fukuanmaw',
+      component:Fukuanmaw
     },
     {
       path:'*',

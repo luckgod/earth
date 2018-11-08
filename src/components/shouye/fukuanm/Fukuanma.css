@@ -1,0 +1,26 @@
+.bjin{
+    height: 100vh;
+    width: 100vw;
+    background:url(../../../assets/fukauma.png) no-repeat center scroll;   /*图片的宽高为440*440，而元素相对区域高度为50*/ 
+    background-size:cover;
+    position: relative;
+}
+.bjina{
+    overflow: hidden;
+  
+  
+    
+}
+.erweima{
+    width: 3.65rem;
+    height: 3.65rem;
+    padding: 0.33rem;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 4rem;
+    margin: auto;
+    
+  
+}

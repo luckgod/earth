@@ -15,7 +15,7 @@
           <span class="twosela">1200积分</span>
           <span class="twoselb">=12元</span>
         </div>
-        <div class="flr twoser">
+        <div class="flr twoser" @click="jumph">
             <i class="iconfont icon-wodeyouhuijuan smell"></i>
             <span>会员码</span>
             
@@ -265,6 +265,9 @@ export default {
     },
      jumpf(){
       this.$router.push({path:'/jifenshangcheng'})
+    },
+    jumph(){
+       this.$router.push({path:'/fukuanma'})
     }
 }
 }
@@ -434,7 +437,7 @@ input::-webkit-input-placeholder {
   
 }
 .lunboli_two img{
-  width: 3rem;
+  width: 48%;
   height: 1.64rem;
   margin-left:0.1rem;
   margin-right:-0.2rem;  
@@ -542,9 +545,12 @@ background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(243, 203, 10
 }
 .xianshi_dingwei{
   height: 3rem;
+  width: 96vw;
   position: absolute;
   top: 1.52rem;
-  right: 0.12rem;
+  right:0;
+  left: 0;
+  margin: auto;
   background: #ffffff;
   box-shadow: 0px 0px 10px #888888;
   padding-top:0.4rem; 
