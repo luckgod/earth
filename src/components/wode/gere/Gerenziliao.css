@@ -1,0 +1,41 @@
+.warp{
+   
+    height: 100vh;
+    background: #f5f5f58a;
+    padding-top:0.2rem; 
+}
+.list{
+    font-size: 0.28rem;
+    line-height: 1.02rem;
+}
+.item{
+    overflow: hidden;
+    padding-left: 0.3rem;
+    padding-right:0.3rem;
+    background: #ffffff;
+}
+.item:active{
+    background: #dbd1d1;
+}
+.item span{
+    float: left;
+}
+.item  div{
+    float: right;
+}
+.zbname{
+    color: #969696;
+    position: relative;
+    
+}
+.zbname span{
+    margin-right: 0.1rem;
+}
+.zbname img{
+    width: 0.62rem;
+    height: 0.62rem;
+    position: absolute;
+    right: 0.4rem;
+    top:0.2rem;
+    border-radius:0.31rem; 
+}

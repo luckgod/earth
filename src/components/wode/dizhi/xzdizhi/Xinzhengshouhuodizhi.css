@@ -1,0 +1,101 @@
+ .warp{
+     margin: 0.37rem 0.2rem;
+ }
+
+
+ .item{
+     font-size: 0.28rem;
+     line-height: 0.98rem;
+ }
+ .item input{
+     padding-left: 1rem;
+     
+ }
+ input::-webkit-input-placeholder{
+    color:#CCCCCC;
+}
+.teshu input{
+    padding-left: 1.35rem;
+}
+.itema{
+    font-size: 0.28rem;
+    line-height: 0.98rem;
+    position: relative;
+}
+.dingwei{
+    position: absolute;
+    top: 0.12rem;
+    right: 0.3rem;
+}
+
+/* huakuai */
+.switch {
+    width: 0.78rem;
+    height: 0.46rem;
+    position: relative;
+    border: 1px solid #dfdfdf;
+    background-color: #fdfdfd;
+    box-shadow: #dfdfdf 0 0 0 0 inset;
+    border-radius: 0.23rem;
+    background-clip: content-box;
+    display: inline-block;
+    -webkit-appearance: none;
+    user-select: none;
+    outline: none;
+}
+.switch:before {
+    content: '';
+    width: 0.46rem;
+    height: 0.46rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0.23rem;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+.switch:checked {
+    border-color: #64bd63;
+    box-shadow: #64bd63 0 0 0 16px inset;
+    background-color: #64bd63;
+}
+.switch:checked:before {
+    left: 0.3rem;
+}
+.switch.switch-anim {
+    transition: border cubic-bezier(0, 0, 0, 1) 0.4s, box-shadow cubic-bezier(0, 0, 0, 1) 0.4s;
+}
+.switch.switch-anim:before {
+    transition: left 0.3s;
+}
+.switch.switch-anim:checked {
+    box-shadow: #64bd63 0 0 0 0.16rem inset;
+    background-color: #64bd63;
+    transition: border ease 0.4s, box-shadow ease 0.4s, background-color ease 1.2s;
+}
+.switch.switch-anim:checked:before {
+    transition: left 0.3s;
+}
+/* btn */
+.btn{
+    position: fixed;
+    bottom: 0.2rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.btn p{
+    width: 92vw;
+    height: 0.7rem;
+    font-size:0.3rem;
+    font-weight:600;
+    margin: 0 auto;
+    text-align: center;
+    background: #7ed23e;
+    color: #ffffff;
+    line-height: 0.7rem;
+    border-radius:0.1rem;
+}
+.btn p:active{
+    background: #58ad17;
+}

@@ -1,0 +1,54 @@
+.warp{
+    box-shadow:0 2px 5px rgb(219, 207, 207) inset;
+    height: 100vh;
+    padding-top: 0.32rem;
+}
+
+.itm{
+    line-height: 1.02rem;
+    overflow: hidden;
+   
+    
+}
+.itm:active{
+    background: #cccccc;
+}
+.itm i:nth-child(1){
+    font-size: 0.38rem;
+    float: left;
+    margin-left: 0.3rem;
+   
+}
+.itm span:nth-child(2){
+    font-size: 0.28rem;
+    float: left;
+    margin-left: 0.38rem;
+    color: #333333;
+}
+.itm i:nth-child(3){
+    float: right;
+    font-size: 0.38rem;
+    margin-right: 0.3rem;
+}
+.btn{
+    position: fixed;
+    bottom: 0.2rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.btn p{
+    width: 92vw;
+    height: 0.7rem;
+    font-size:0.26rem;
+    font-weight:600;
+    margin: 0 auto;
+    text-align: center;
+    background: #7ed23e;
+    color: #ffffff;
+    line-height: 0.7rem;
+    border-radius:0.2rem;
+}
+.btn p:active{
+    background: #58ad17;
+}

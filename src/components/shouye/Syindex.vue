@@ -148,7 +148,7 @@
     <ul>
       <li class="fll tejia_hea_l">
         <span>特价商品</span>
-        <i class="iconfont icon-boluo"></i>
+        <i class="iconfont icon-right"></i>
       </li>
       <li class="flr miaosha_hea_r" @click="jumpd">
           <span>更多</span>
@@ -532,8 +532,7 @@ overflow: hidden;
 .tejia_hea_l i{ 
     color: #f9a449;
 background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(243, 203, 10, 1)), to(rgba(243, 107, 10, 1)));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+ 
 }
 .xianshimiaosha img{
  width: 100vw;

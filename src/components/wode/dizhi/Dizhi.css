@@ -1,0 +1,96 @@
+.lcard{
+    width: 92vw;
+    margin: 0.2rem auto;
+    font-size:0.26rem;
+    text-indent:0.21rem; 
+    box-shadow: 0 0 5px #999999;
+    border-radius:0.06rem; 
+    position: relative;
+}
+.itema{
+    color: #333333;
+    padding-top:0.47rem ;
+    padding-bottom: 0.24rem;
+    
+}
+.itema span:nth-child(2){
+    padding-left:0.3rem; 
+}
+.itemb{
+    color: #333333;
+    padding-bottom: 0.47rem;
+}
+.itemc{
+  
+    color: #999999;
+    line-height: 0.8rem;
+}
+.itemc span:nth-child(2){
+    padding-left: 0.5rem;
+}
+.itemc span:nth-child(3){
+    padding-left: 2.2rem;
+}
+.itemc span:nth-child(4){
+    padding-left: 0.5rem;
+    
+}
+/* sssss */
+       
+label {                 /*设置label的样式*/
+    width: 100%;
+    padding: 0.1rem 0;
+    display: block;
+    line-height: 0.2rem;
+    position: relative;
+    font-weight: normal;
+}
+.radio .option {      /*把优化后的按钮图片设置为该div的背景图片，把该div定位到原生样式的上方，遮盖住原生样式。*/
+    width: 0.2rem;
+    height:0.2rem;
+    position: absolute;
+    top: 0.1rem;
+    left: 0;
+    background-size: cover;
+    background: url(../../../assets/img/a.png) no-repeat;
+    background-size: cover;
+}
+.radio input[type="radio"] {  /*为了保险起见，把原生样式隐藏掉*/
+    display: inline-block ;
+    margin-right: 0.15rem ;
+    opacity: 0 ;
+}
+input[type="radio"]:checked+div {  /*当radiuo被选中时，把input下边的div标签的背景图片替换掉*/
+    background: url(../../../assets/img/b.png) no-repeat;
+    background-size: cover;
+}
+.dingwei{
+    position: absolute;
+    left: 0.3rem;
+    top:1.9rem;
+}
+
+
+/*  */
+.btn{
+    position: fixed;
+    bottom: 0.2rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.btn p{
+    width: 92vw;
+    height: 0.7rem;
+    font-size:0.28rem;
+    font-weight:600;
+    margin: 0 auto;
+    text-align: center;
+    background: #7ed23e;
+    color: #ffffff;
+    line-height: 0.7rem;
+    border-radius:0.1rem;
+}
+.btn p:active{
+    background: #58ad17;
+}

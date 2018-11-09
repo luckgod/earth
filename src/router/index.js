@@ -19,7 +19,16 @@ import Jiaoyimingxi from '../components/jiaoyimingx/Jiaoyimingxi.vue'
 import Duihuanjilu from '../components/duihuanj/Duihuanjilu.vue'
 import Huiyuanka from '../components/huiyuank/Huiyuanka.vue'
 import Fukuanmaw from '../components/fukuanmw/Fukuanmaw.vue'
-
+import Bangzhuzhongxin from '../components/wode/bangzhu/Bangzhuzhongxin.vue'
+import Shezhi from '../components/wode/shez/Shezhi.vue'
+import Gerenziliao from '../components/wode/gere/Gerenziliao.vue'
+import Shezhiname from '../components/wode/shezhin/Shezhiname.vue'
+import Dizhi from '../components/wode/dizhi/Dizhi.vue'
+import Xinzhengshouhuodizhi from '../components/wode/dizhi/xzdizhi/Xinzhengshouhuodizhi.vue'
+import Wuyefeidikou from '../components/wode/wuyefe/Wuyefeidikou.vue'
+import Fanghaogenggai from '../components/wode/wuyefe/fanghaogai/Fanghaogenggai.vue'
+import Dikouxiangqing from '../components/wode/wuyefe/dikoux/Dikouxiangqing.vue'
+import Wuyejiaona from '../components/wode/wuyefe/wuyejiaon/Wuyejiaona.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -99,6 +108,46 @@ export default new Router({
     {
       path:'/fukuanmaw',
       component:Fukuanmaw
+    },
+    {
+      path:'/bangzhuzhongxin',
+      component:Bangzhuzhongxin
+    },
+    {
+      path:'/Shezhi',
+      component:Shezhi
+    },
+    {
+      path:'/gerenziliao',
+      component:Gerenziliao
+    },
+    {
+      path:'/shezhiname',
+      component:Shezhiname
+    },
+    {
+      path:'/dizhi',
+      component:Dizhi
+    },
+    {
+      path:'/xinzhengshouhuodizhi',
+      component:Xinzhengshouhuodizhi
+    },
+    {
+      path:'/wuyefeidikou',
+      component:Wuyefeidikou
+    },
+    {
+      path:'/fanghaogenggai',
+      component:Fanghaogenggai
+    },
+    {
+      path:'/dikouxiangqing',
+      component:Dikouxiangqing
+    },
+    {
+      path:'/wuyejiaona',
+      component:Wuyejiaona
     },
     {
       path:'*',

@@ -1,0 +1,53 @@
+.warp{
+    margin-top:0.38rem ;
+   
+    font-size: 0.28rem;
+    line-height: 0.94rem;    
+}
+.itema{
+    overflow: hidden;
+    padding-left: 0.38rem;
+    padding-right: 0.38rem;
+}
+.itema:active{
+    background: #eae7e7;
+}
+.itemb{
+    float: left;
+}
+.itemc{
+    float: right;
+}
+.ziti{
+    font-size: 0.32rem;
+}
+.zitia{
+    color: #9B9B9B;
+}
+.zitib{
+    font-size: 0.24rem;
+    color: #FF5252;
+}
+/* btn */
+.btn{
+    position: fixed;
+    bottom: 6.2rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.btn p{
+    width: 92vw;
+    height: 0.7rem;
+    font-size:0.3rem;
+    font-weight:600;
+    margin: 0 auto;
+    text-align: center;
+    background: #7ed23e;
+    color: #ffffff;
+    line-height: 0.7rem;
+    border-radius:0.1rem;
+}
+.btn p:active{
+    background: #58ad17;
+}
