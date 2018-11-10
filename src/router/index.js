@@ -29,6 +29,8 @@ import Wuyefeidikou from '../components/wode/wuyefe/Wuyefeidikou.vue'
 import Fanghaogenggai from '../components/wode/wuyefe/fanghaogai/Fanghaogenggai.vue'
 import Dikouxiangqing from '../components/wode/wuyefe/dikoux/Dikouxiangqing.vue'
 import Wuyejiaona from '../components/wode/wuyefe/wuyejiaon/Wuyejiaona.vue'
+import Jiaonashuoming from '../components/wode/wuyefe/jiaonashuomin/Jiaonashuoming.vue'
+import Yijianfankui from '../components/wode/bangzhu/yijianfank/Yijianfankui.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -148,6 +150,14 @@ export default new Router({
     {
       path:'/wuyejiaona',
       component:Wuyejiaona
+    },
+    {
+      path:'/jiaonashuoming',
+      component:Jiaonashuoming
+    },
+    {
+      path:'/yijianfankui',
+      component:Yijianfankui
     },
     {
       path:'*',

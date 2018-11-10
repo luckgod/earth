@@ -6,7 +6,7 @@
             <li class="itm"><i class="iconfont icon-liucheng"></i> <span>商家入驻流程</span><i class="iconfont icon-right"></i></li>
             <li class="itm"><i class="iconfont icon-san"></i> <span>安全注意事项</span><i class="iconfont icon-right"></i></li>
           </ul>
-           <div class="btn">
+           <div class="btn" @click="jumpa">
                 <p >意见反馈</p>
             </div>
       </div>
@@ -20,6 +20,11 @@ export default {
     return {
       msg: 'moban'
     }
+  },
+  methods:{
+      jumpa(){
+        this.$router.push({path:'/yijianfankui'})
+      }
   }
   
 }
