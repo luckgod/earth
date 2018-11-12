@@ -113,3 +113,89 @@ text-align: center;
     padding-left:1.4rem; 
      
 }
+/* tanchuang */
+  /* tanchaung */
+  .fenxiang{
+    width: 100vw;
+    height: 3.2rem;
+    background: #f4f4f4;
+    padding-top:0.44rem; 
+}
+.fenxiang_to {
+  width: 100vw;
+   
+}
+.fenxiang_to ul{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+ 
+}
+.fenxiang_to ul li{
+   
+}
+.fenxiang_miao{
+  display: block;
+font-size: 0.12rem;
+text-align: center;
+line-height: 0.6rem;
+
+}
+.fenxiang_bo{
+  font-size: 0.36rem;
+
+}
+.fenxiang_bac{
+
+  line-height: 0.8rem;
+  
+}
+.zitiaa{
+  font-size: 0.6rem;
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #20c755;
+  color: #f4f4f4;
+  text-align: center;
+  line-height: 1.2rem;
+  border-radius:0.6rem;  
+}
+.zitibb{
+  display: block;
+  font-size: 0.6rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #20BEA5;
+  color: #f4f4f4;
+  text-align: center;
+  line-height: 1.2rem;
+  border-radius:0.6rem;
+}
+.ziticc{
+  display: block;
+  font-size: 0.6rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  text-align: center;
+  background: #ffffff;
+  line-height: 1.2rem;
+  border-radius:0.6rem;
+}
+.fenxiangbtn{
+  width: 100vw;
+  background: #ffffff;
+  text-align: center;
+  
+}
+.fenxiangbtn span{
+  display: inline-block;
+  width: 6rem;
+  height: 0.86rem;
+ background: #f4f4f4;
+  line-height: 0.86rem;
+  font-size: 0.28rem;
+  font-weight:400;
+  margin-bottom:0.2rem; 
+}

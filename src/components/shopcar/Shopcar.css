@@ -1,0 +1,221 @@
+/* anniu */
+label {                 /*设置label的样式*/
+    width: 100%;
+    padding: 0.1rem 0;
+    display: block;
+    line-height: 0.2rem;
+    position: relative;
+    font-weight: normal;
+}
+.radio .option {      /*把优化后的按钮图片设置为该div的背景图片，把该div定位到原生样式的上方，遮盖住原生样式。*/
+    width: 0.4rem;
+    height:0.4rem;
+    position: absolute;
+    top: 0.1rem;
+    left: 0;
+    background-size: cover;
+    background: url(../../assets/img/a.png) no-repeat;
+    background-size: cover;
+}
+.radio input[type="radio"] {  /*为了保险起见，把原生样式隐藏掉*/
+    display: inline-block ;
+    margin-right: 0.15rem ;
+    opacity: 0 ;
+}
+input[type="radio"]:checked+div {  /*当radiuo被选中时，把input下边的div标签的背景图片替换掉*/
+    background: url(../../assets/img/b.png) no-repeat;
+    background-size: cover;
+}
+.con{
+    position: relative;
+}
+.tit{
+    position: relative;
+}
+
+.dingweiwe{
+    position: absolute;
+    left: 0.3rem;
+    top:0.22rem;
+}
+/*  */
+
+
+
+.warp{
+   
+    
+}
+.tit {
+line-height: 0.4rem;
+padding-left: 1rem;
+color: #4D535C;
+}
+.tit span{
+    font-size:0.28rem; 
+}
+.con{
+    overflow: hidden;
+ 
+    margin-top: 0.2rem;
+}
+.lefta{
+    float: left;
+    margin-left: 1rem;
+}
+.rughtb{
+    float: right;
+}
+.lefta_t{
+    float: left;
+}
+.lefta_y{
+    float: left;
+    text-indent: 0.2rem;
+}
+.lefta_t img{
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-top: 0.1rem;
+}
+.lefta_y p{
+    font-size: 0.2rem;
+    line-height: 0.5rem;
+}
+.rughtb{
+   margin-top: -0.3rem;
+   margin-right: 0.2rem
+}
+.rughtb span{
+    font-size: 0.24rem;
+    line-height: 0.4rem;
+}
+.zita{
+color:#999999;
+font-size: 0.36rem;
+}
+.zitb{
+color: #81d13a;
+font-size: 0.36rem;
+}
+.one_se{
+    width: 96vw;
+    margin: 0 auto;
+    padding-bottom:0.3rem; 
+    border-bottom: 1px solid #979797;
+}
+.two_se{
+    width: 94vw;
+    margin: 0 auto;  
+}
+.two_sa{
+    font-size: 0.2rem;
+    color: #989898;
+    line-height: 0.6rem;
+}
+.two_sa span:nth-child(2){
+    display: inline-block;
+   float: right;
+   color: #4A4A4A;
+    
+} 
+.dw span{
+    font-size: 0.2rem;
+    position: absolute;
+    top: 0.4rem;
+    left: 0.4rem;
+    color: #989898;
+}
+.thre_se{
+    width: 96vw;
+    margin: 0 auto; 
+}
+
+.thre_sea img{
+    width: 66vw;
+    height: 0.28rem;
+   padding-left: 0.86rem;
+}
+.proimg img{
+   padding-left: 0.12rem;
+    width: 1.79rem;
+    height: 1.62rem;
+    margin: 0 auto;
+}
+.proname{
+    font-size: 0.28rem;
+    line-height: 0.6rem;
+}
+.projia{
+    font-size: 0.32rem;
+    line-height: 0.4rem;
+}
+.projia span:nth-child(1) {
+    
+    color: #fb312f;
+}
+.projia span:nth-child(2) i{
+   display: inline-block;
+   float: right;
+    font-size: 0.32rem;
+    color: #e9aa74;
+}
+.liea{
+    width: 80vw;
+margin: 0.4rem auto;
+display: flex;
+justify-content: space-between;
+
+}
+.liea{
+   
+}
+.liea{
+    
+}
+.four_se{
+    width: 100vw;
+    position: fixed;
+    font-size: 0.24rem;
+    bottom:0;
+    background: #ffffff;
+    
+   overflow: hidden;
+   line-height: 0.4rem;
+   box-shadow: 0 0 5px #979797;
+}
+.four_se_oli{
+    float: left;
+}
+.olia{
+    padding-left:0.62rem;
+}
+.olia p{
+    line-height: 0.8rem;
+}
+.olib{
+    padding-left:0.7rem;
+    font-size: 0.16rem; 
+}
+.olib p:nth-child(1){
+color: #ffad00;
+font-weight: 600;
+font-size: 0.24rem;
+text-indent: 0.2rem; 
+}
+.olic p{
+    width: 1.61rem;
+    height: 0.58rem;
+    background: #f5a623;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    line-height: 0.58rem;
+    border-radius:0.12rem;
+    margin-top: 0.1rem; 
+}
+.dingweiweb{
+    position: absolute;
+    left: 0.12rem;
+    top:0.1rem;
+}

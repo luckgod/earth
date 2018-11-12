@@ -2,7 +2,7 @@
   <div>
       <div class="onese">
           <div class="shezhi" @click="jumpb"></div>
-          <div class="xiaoxi"></div>
+          <div class="xiaoxi" @click="jumpg"></div>
           <div class="gerencar">
               <div class="warpa" @click="jumpc">
                   <img class="utou" src="../../assets/logo.png" alt="">
@@ -90,6 +90,9 @@ export default {
         jumpf(){
            this.$router.push({path:'/wuyefeidikou'})
       },
+      jumpg(){
+          this.$router.push({path:'/xiaoxizhongxin'})
+      }
 
   }
   

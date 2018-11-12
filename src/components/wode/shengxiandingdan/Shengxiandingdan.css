@@ -1,0 +1,16 @@
+.tabh{
+    padding-top: 0.02rem; 
+    padding-bottom: 0.04rem; 
+    border-bottom: 1px solid #c4c4c4;
+    overflow: hidden;
+ }
+ .mint-tab-item{
+     margin-left:0.2rem;
+     margin-right: 0.2rem; 
+ }
+
+.mint-navbar .mint-tab-item.is-selected{
+    border-bottom: 3px solid #7dd23d;
+    color: black;
+    margin-bottom: -3px;
+}

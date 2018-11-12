@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Syindex from '../components/shouye/Syindex'
 import Wode from '../components/wode/Wode.vue'
+import Shopcar from '../components/shopcar/Shopcar.vue'
 import Huoquweizhi from '../components/shouye/weizhi/Huoquweizhi.vue'
 import Shangpinsousu from '../components/shouye/sousu/Shangpinsousu.vue'
 import Shangjiaifo from '../components/shouye/shangjiaifo/Shangjiaifo.vue'
@@ -31,6 +32,9 @@ import Dikouxiangqing from '../components/wode/wuyefe/dikoux/Dikouxiangqing.vue'
 import Wuyejiaona from '../components/wode/wuyefe/wuyejiaon/Wuyejiaona.vue'
 import Jiaonashuoming from '../components/wode/wuyefe/jiaonashuomin/Jiaonashuoming.vue'
 import Yijianfankui from '../components/wode/bangzhu/yijianfank/Yijianfankui.vue'
+import Xiaoxizhongxin from '../components/wode/xiaoxizhongxin/Xiaoxizhongxin.vue'
+import Shengxiandingdan from '../components/wode/shengxiandingdan/Shengxiandingdan.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -42,6 +46,10 @@ export default new Router({
     {
       path:'/wode',
       component:Wode
+    },
+    {
+      path:'/shopcar',
+      component:Shopcar
     },
     {
       path:'/huoquweizhi',
@@ -158,6 +166,14 @@ export default new Router({
     {
       path:'/yijianfankui',
       component:Yijianfankui
+    },
+    {
+      path:'/xiaoxizhongxin',
+      component:Xiaoxizhongxin
+    },
+    {
+      path:'/shengxiandingdan',
+      component:Shengxiandingdan
     },
     {
       path:'*',

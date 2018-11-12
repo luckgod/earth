@@ -2,7 +2,7 @@
   <div>
       <div class="tit">
          <i class="iconfont icon-left zitia"></i>
-         <i class="iconfont icon-fenxiang zitib"></i>
+         <i class="iconfont icon-fenxiang zitib" @click="fnx"></i>
       </div>
       <div>
     <div class="lunbo">
@@ -55,6 +55,24 @@
            
         </div>
         </mt-popup>
+         <mt-popup
+                v-model="popupVisibla"
+                position="bottom"
+                
+                >
+                <div class="fenxiang">
+                    <div class="fenxiang_to">
+                        <ul>
+                            <li><i class="iconfont icon-iconfontzhizuobiaozhunbduan32  zitiaa"></i> <span class="fenxiang_miao">微信好友</span> </li>
+                            <li><i class="iconfont icon-weixinpengyouquan zitibb"></i> <span class="fenxiang_miao">微信朋友圈</span> </li>
+                            <li><i class="iconfont icon-lianjie ziticc"></i> <span class="fenxiang_miao">微信朋友圈</span> </li>
+                        </ul>
+                    </div>
+                    <div  class="fenxiangbtn">
+                        <span @click="fnxq">取消</span>
+                    </div>
+        </div>
+        </mt-popup>
   </div>
 </template>
 <script>
@@ -64,6 +82,7 @@ export default {
     return {
       msg: 'moban',
       popupVisible:false,
+       popupVisibla:false,
     }
   },
   methods:{
@@ -73,6 +92,13 @@ export default {
       },
       qux(){
           this.popupVisible=false
+      },
+      fnx(){
+          this.popupVisibla=true
+         
+      },
+      fnxq(){
+          this.popupVisibla=false
       }
   }
   
