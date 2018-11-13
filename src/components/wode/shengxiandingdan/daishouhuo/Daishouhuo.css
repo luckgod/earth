@@ -1,4 +1,80 @@
 
+.wapra{
+    width: 92vw;
+    height: 0.86rem;
+    margin:0 auto;
+    background: #7dd23d;
+    text-align: left;
+    text-indent: 0.57rem;
+    line-height:0.34rem;
+    margin-top:0.2rem;
+    border-radius:0.08rem;
+    box-shadow: 0 0 5px #999999;
+}
+.wapra span{
+    font-size: 0.32rem;
+   
+    font-weight:600;
+    color: aliceblue;
+}
+.waprb{
+    width: 92vw;
+    margin: 0 auto;
+    box-shadow: 0 0 5px #999999;
+    margin-top: 0.2rem;
+    text-indent: 0.2rem;
+    border-radius:0.08rem;
+    padding-left: 0.2rem;
+    padding-right:0.2rem;
+    box-sizing: border-box;
+} 
+.waprb p:nth-child(1){
+    font-size: 0.32rem;
+    line-height: 0.8rem;
+}
+.waprb p:nth-child(2){
+    font-size: 0.28rem;
+    color: #999999;
+    line-height: 0.4rem;
+    padding-bottom: 0.2rem;
+}
+.waprc{
+    width: 92vw;
+    margin: 0 auto;
+    box-shadow: 0 0 5px #999999;
+    margin-top: 0.2rem;
+    text-indent: 0.2rem;
+    border-radius:0.08rem;
+    padding-left: 0.2rem;
+    padding-right:0.2rem;
+    box-sizing: border-box;
+    font-size:0.28rem;
+    overflow: hidden;
+    line-height: 0.78rem;
+}
+.waprc p:nth-child(1){
+float: left;
+}
+.waprc p:nth-child(2){
+    float: right;
+    color: #999999;
+}
+.waprd{
+    width: 92vw;
+    margin: 0 auto;
+    box-shadow: 0 0 5px #999999;
+    margin-top: 0.2rem;
+    text-indent: 0.2rem;
+    border-radius:0.08rem;
+    padding-left: 0.2rem;
+    padding-right:0.2rem;
+    box-sizing: border-box;
+    font-size: 0.24rem;
+    color: #999999;
+    line-height: 0.46rem;
+    padding-top:0.2rem;
+    padding-bottom: 0.2rem; 
+}
 
 /* 11111 */
 .daifukuan{
@@ -6,6 +82,8 @@
     margin: 0.2rem auto;
     box-shadow: 0 1px 10px #a4a4a4;
     border-radius:0.06rem; 
+   
+    
 }
 .daifukuan_tit{
     font-size: 0.28rem;
@@ -83,13 +161,18 @@ line-height: 0.6rem;
 .wapre p:nth-child(2){
     width: 1.62rem;
     height:0.65rem;
-    float: left;
+   
     text-align: center;
     line-height: 0.65rem;
-   margin-top: 0.2rem;
+    margin-top: 0.2rem;
     border: 1px solid #b3b3b3;
     border-radius:0.1rem; 
     margin-left: 0.2rem;
+}
+.waprea  p:nth-child(2){
+    float: right;
+    margin-right: 0.2rem;
+    margin-top: 0.16rem;
 }
 .wapre p:nth-child(3){
     width: 1.46rem;
@@ -102,7 +185,6 @@ line-height: 0.6rem;
     float: left;
    background: #ffaf00;
    color: #ffffff;
-   margin-left: 0.2rem;
-  
+   margin-left: 0.2rem; 
 }
 

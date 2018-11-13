@@ -34,7 +34,14 @@ import Jiaonashuoming from '../components/wode/wuyefe/jiaonashuomin/Jiaonashuomi
 import Yijianfankui from '../components/wode/bangzhu/yijianfank/Yijianfankui.vue'
 import Xiaoxizhongxin from '../components/wode/xiaoxizhongxin/Xiaoxizhongxin.vue'
 import Shengxiandingdan from '../components/wode/shengxiandingdan/Shengxiandingdan.vue'
-
+import Daifukuan from '../components/wode/shengxiandingdan/daifukuan/Daifukuan.vue'
+import Daipeisong from '../components/wode/shengxiandingdan/daipeisong/Daipeisong.vue'
+import Daishouhuo from '../components/wode/shengxiandingdan/daishouhuo/Daishouhuo.vue'
+import Daipingjia from '../components/wode/shengxiandingdan/daipingjia/Daipingjia.vue'
+import Tuikuanshouhou from '../components/wode/tuikuanshouhou/Tuikuanshouhou.vue'
+import Shenqingtuikuan from '../components/wode/shengxiandingdan/shenqingtuikuan/Shenqingtuikuan.vue'
+import Tuikuanxiangqing from '../components/wode/tuikuanshouhou/tuikuanxiangqing/Tuikuanxiangqing.vue'
+import Dingdanxiangqing from '../components/wode/shengxiandingdan/dingdanxaingqing/Dingdanxaingqing.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -174,6 +181,38 @@ export default new Router({
     {
       path:'/shengxiandingdan',
       component:Shengxiandingdan
+    },
+    {
+      path:'/daifukuan',
+      component:Daifukuan
+    },
+    {
+      path:'/daipeisong',
+      component:Daipeisong
+    },
+    {
+      path:'/daishouhuo',
+      component:Daishouhuo
+    },
+    {
+      path:'/daipingjia',
+      component:Daipingjia
+    },
+    {
+      path:'/tuikuanshouhou',
+      component:Tuikuanshouhou
+    },
+    {
+      path:'/shenqingtuikuan',
+      component:Shenqingtuikuan
+    },
+    {
+      path:'/Tuikuanxiangqing',
+      component:Tuikuanxiangqing
+    },
+    {
+      path:'/Dingdanxiangqing',
+      component:Dingdanxiangqing
     },
     {
       path:'*',

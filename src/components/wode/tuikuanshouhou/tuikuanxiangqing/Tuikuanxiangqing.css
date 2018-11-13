@@ -105,4 +105,75 @@ line-height: 0.6rem;
    margin-left: 0.2rem;
   
 }
+.btn_a{
+    font-size: 0.28rem;
+    overflow: hidden;
+}
+.btn_a div{
+    float: right;
+}
+.btn_a div p{
+width: 1.6rem;
+height: 0.6rem;
+line-height: 0.6rem;
+border: 1px solid #b3b3b3;
 
+text-align: center;
+border-radius:0.08rem;
+margin: 0.1rem; 
+}
+.daifukuan_h{
+    border-bottom: 1px solid #b3b3b347;
+}
+.waprd{
+    width: 92vw;
+    margin: 0 auto;
+    box-shadow: 0 0 5px #999999;
+    margin-top: 0.2rem;
+    text-indent: 0.2rem;
+    border-radius:0.08rem;
+    padding-left: 0.2rem;
+    padding-right:0.2rem;
+    box-sizing: border-box;
+    font-size: 0.24rem;
+    color: #999999;
+    line-height: 0.46rem;
+    padding-top:0.2rem;
+    padding-bottom: 0.2rem; 
+}
+/*  */
+.wapre{
+    position: fixed;
+    font-size: 0.28rem; 
+    bottom: 0;
+    width: 100vw;
+    
+    height: 0.98rem;
+    
+    box-shadow: -1px -1px 10px #888888;
+    background: #ffffff;
+}
+.wapre p:nth-child(1){
+    float: left;
+    line-height: 0.98rem;
+    text-indent: 0.2rem;
+}
+.wapre p:nth-child(1) span{
+    color: #ff5252;
+}
+.wapre p:nth-child(2){
+    width: 1.62rem;
+    height:0.65rem;
+   
+    text-align: center;
+    line-height: 0.65rem;
+    margin-top: 0.2rem;
+    border: 1px solid #b3b3b3;
+    border-radius:0.1rem; 
+    margin-left: 0.2rem;
+}
+.waprea  p:nth-child(2){
+    float: right;
+    margin-right: 0.2rem;
+    margin-top: 0.1rem;
+}
