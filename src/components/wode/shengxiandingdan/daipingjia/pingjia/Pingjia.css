@@ -1,0 +1,120 @@
+.one_se{
+    width: 94vw;
+overflow: hidden;
+margin: 0 auto;
+border-bottom: 1px solid #cccccc;
+}
+.one_sele{
+float: left;
+font-size: 0.28rem;
+line-height: 1rem;  
+}
+.one_seri{
+float: right;
+}
+.gradebox img{
+    width: 0.24rem;
+    height: 0.42rem;
+    margin: 0 0.04rem;
+}
+.gradebox{
+    margin-top: -0.12rem;
+}
+.twose {
+    width: 94vw;
+    margin: 0 auto;
+}
+.twose textarea{
+    width: 100%;
+    border: 0;
+    height: 2.47rem;
+    margin: 0.2rem 0; 
+    text-indent: 0.4rem;
+    font-size: 0.28rem;
+    letter-spacing:0.01rem;
+    line-height: 0.4rem;
+    box-sizing: border-box;
+    padding: 0.2rem; 
+} 
+.twose{
+    width: 94vw;
+    margin: 0 auto;
+    font-size: 0.2rem;
+}
+.twose_a{
+    width: 1.6rem;
+    height:1.6rem ;
+    background: #eeeeee;
+    text-align: center;
+    line-height: 1.6rem;
+    color: #cccccc;
+}
+.twose_b {
+    color: #aaaaaa;
+    line-height: 0.4rem;
+}
+.three_se{
+font-size: 0.28rem;
+border: 1px solid #eeeeee;
+position:fixed;
+bottom:0;
+width: 100%;
+overflow: hidden;
+line-height: 0.98rem;
+}
+.three_sea{
+float: left;
+position: relative;
+}
+.three_seb{
+    float: left;
+    color: #cccccc;
+    padding-left: 0.8rem;
+}
+.three_sec{
+width:1.84rem ;
+height: 0.65rem;
+float: right;
+border:1px solid #cccccc;
+text-align: center;
+line-height: 0.65rem;
+margin-top: 0.2rem;
+margin-right: 0.2rem;
+box-shadow:0 0 5px #aaaaaa;
+border-radius:0.1rem;  
+color: #666666;  
+}
+/*  */
+label {                 /*设置label的样式*/
+    width: 100%;
+    padding: 0.1rem 0;
+    display: block;
+    line-height: 0.2rem;
+    position: relative;
+    font-weight: normal;
+}
+.radio .option {      /*把优化后的按钮图片设置为该div的背景图片，把该div定位到原生样式的上方，遮盖住原生样式。*/
+    width: 0.4rem;
+    height:0.4rem;
+    position: absolute;
+    top: 0.1rem;
+    left: 0;
+    background-size: cover;
+    background: url(../../../../../assets/img/a.png) no-repeat;
+    background-size: cover;
+}
+.radio input[type="checkbox"] {  /*为了保险起见，把原生样式隐藏掉*/
+    display: inline-block ;
+    margin-right: 0.15rem ;
+    opacity: 0 ;
+}
+input[type="checkbox"]:checked+div {  /*当radiuo被选中时，把input下边的div标签的背景图片替换掉*/
+    background: url(../../../../../assets/img/b.png) no-repeat;
+    background-size: cover;
+}
+.dingwei{
+    position: absolute;
+    left: 0.2rem;
+    top: 0.19rem;
+    
+}

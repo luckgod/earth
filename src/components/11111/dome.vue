@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  name: 'Huoquweizhi',
+  name: 'Shangpi',
       data () {
     return {
       msg: 'moban'

@@ -2,7 +2,8 @@
   <div>
             <div class="box">
                 <input type="text" name="search" placeholder="请输入关键字">
-                <div class="search">搜索</div> 
+               
+                <router-link  class="search" tag="div" to="/shangpinseach">搜索</router-link>
             </div>
     <div>
         <div class="two">

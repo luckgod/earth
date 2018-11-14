@@ -7,7 +7,7 @@
       </div>
       
       <div class="dangqianjinfenr">
-        <span class="dangqianjinfenrz">兑换记录</span>
+        <router-link class="dangqianjinfenrz" tag="span" to="/duihuanjilu">兑换记录</router-link> 
       </div>
     </div>
     <div>

@@ -1,11 +1,11 @@
 .box{
     width: 94vw;
     margin: 0.3rem auto;
-   
+   overflow: hidden;
     
 }
 .box input{
-    width: 4.4rem;
+    width: 70%;
     font-size:0.18rem;
     background: #f0f0f0;
     height: 0.5rem;

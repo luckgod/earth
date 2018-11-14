@@ -1,0 +1,108 @@
+.box{
+    width: 94vw;
+    margin: 0.3rem auto;
+   overflow: hidden;
+    
+}
+.box input{
+    width: 70%;
+    font-size:0.18rem;
+    background: #f0f0f0;
+    height: 0.5rem;
+    border-radius: 0.3rem;
+    float: left;
+    background-image: url(../../../../assets/search.png);
+    background-repeat: no-repeat;
+    background-size:0.25rem;
+    background-position:0.3rem center;
+    padding:0 0 0 0.6rem;
+}
+input::-webkit-input-placeholder{
+    color: #a1a1a1;
+ }
+
+.search{
+    float: right;
+    font-size:0.26rem;
+    color: black;
+    text-align: center;
+    line-height:0.52rem;
+    cursor: pointer;
+    margin-right:0.3rem; 
+}
+.two_se{
+    font-size:0.28rem; 
+}
+.two_se_oul{
+    display: flex;
+    justify-content: space-around;
+}
+.two_se_oulziti{
+    order: 1.5;
+    position: relative;
+}
+.two_se_oulziti i:nth-child(2){
+
+position: absolute;
+top: -0.06rem;
+right: -0.3rem;
+}
+.two_se_oulziti i:nth-child(3){
+
+font-size: 0.28rem;
+position: absolute;
+bottom: -0.1rem;
+right:-0.32rem; 
+}
+.warpa{
+width: 94vw;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.con{
+margin: 0.2rem 0;
+}
+.itema{
+
+}
+.itemaa img{
+    width: 2.62rem;
+    height: 2.67rem;
+}
+.itemab{
+    font-size: 0.26rem;
+    line-height: 0.4rem;
+}
+.itemac{
+    line-height: 0.4rem;
+    margin-top: -0.16rem;
+}
+.itemaca{
+    float: left;
+}
+.itemaca span:nth-child(1){
+font-size: 0.36rem;
+color: #FA302E;
+font: weight 600; 
+}
+.itemaca span:nth-child(2){
+font-size: 0.16rem;
+width: 0.32rem;
+height: 0.22rem;
+padding: 0.01rem 0.1rem;
+border:1px solid #FA302E; 
+border-radius:0.14rem; 
+color: #FA302E;
+}
+.itemacb{
+float: right;
+
+}
+.itemacb i{
+   font-size: 0.36rem;
+   padding-right:0.06rem; 
+   color:#f3c273;
+    
+    }

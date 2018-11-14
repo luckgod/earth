@@ -151,11 +151,11 @@ export default {
   name: 'Huoquweizhi',
       data () {
     return {
-      msg: 'moban',
-        active: 'tab-container1',
-        selected:1,
-        isActive:true,
-       stars: [{
+    msg: 'moban',
+    active:'tab-container3',
+    selected:1,
+    isActive:true,
+    stars: [{
                             src: starOffImg,
                             active: false
                         }, {
@@ -178,6 +178,11 @@ export default {
     }
     
   },
+  mounted:function(){
+      console.log(this.$route.query.num)
+      
+     this._data.active=this.$route.query.num
+  },
   computed: {
     
     reversedMessage: function () {
@@ -190,7 +195,7 @@ export default {
                             
     }
   }           
- 
+    
   
 }
 </script>

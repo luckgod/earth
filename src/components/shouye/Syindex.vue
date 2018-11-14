@@ -9,8 +9,7 @@
      <div class="flr ser" @click="jumpa">
       <input type="text" placeholder="搜索你想要的商品">
      </div>
-   </div>
-    <div class="twose">
+     <div class="twose">
         <div class="fll twosel" @click="jumpf">
           <span class="twosela">1200积分</span>
           <span class="twoselb">=12元</span>
@@ -21,6 +20,8 @@
             
         </div>
     </div>
+   </div>
+    
     <!-- 轮播 -->
   <mt-swipe :auto="4000" class="lunbo"  :show-indicators="false">
     <mt-swipe-item class="lunboli"><img src="../../assets/lunbosucia1.jpg" alt=""></mt-swipe-item>
@@ -35,11 +36,11 @@
           <span>太阳公社水天成分店 <i class="iconfont icon-right "></i></span>
         </li>
         <li class="card_se">
-          <img src="../../assets/buluo.jpg" alt="">
-          <span class='cspan'>4.8分</span>
-          <span class='cardjuan'>劵</span>
-          <span>¥10</span>
-          <span>¥20</span>  
+          <img src="../../assets/buluo.jpg" alt=""  @click="jumpba">
+          <span  @click="jumpba" class='cspan'>4.8分</span>
+          <span  @click="jumpbc" class='cardjuan'>劵</span>
+          <span  @click="jumpbc">¥10</span>
+          <span  @click="jumpbc">¥20</span>  
         </li>
       </ul>
     </div>
@@ -148,7 +149,7 @@
     <ul>
       <li class="fll tejia_hea_l">
         <span>特价商品</span>
-        <i class="iconfont icon-right"></i>
+        <i class="iconfont icon-boluo"></i>
       </li>
       <li class="flr miaosha_hea_r" @click="jumpd">
           <span>更多</span>
@@ -249,7 +250,13 @@ export default {
       this.$router.push({path:'/shangpinsousu'})
     },
     jumpb(){
-      this.$router.push({path:'/Shangjiaifo'})
+      this.$router.push({path:'/Shangjiaifo',query:{num:'tab-container1'}})
+    },
+     jumpba(){
+      this.$router.push({path:'/Shangjiaifo',query:{num:'tab-container2'}})
+    },
+     jumpbc(){
+      this.$router.push({path:'/Shangjiaifo',query:{num:'tab-container3'}})
     },
     jumpc(){
       this.$router.push({path:'/miaoshashangpin'})
@@ -287,7 +294,7 @@ export default {
 }
 .onese{
   overflow: hidden;
-  background: #5ab54c;
+  background:url(../../assets/img/16.png) ;
   color: #ffffff;
   width:100vw ;
 }
@@ -325,7 +332,7 @@ border-radius:0.2rem;
  
 }
 .twose{
-   background: #5ab54c;
+  
    width: 100vw;
    height:0.7rem;
    line-height: 0.7rem;
@@ -364,19 +371,21 @@ input::-webkit-input-placeholder {
 
 }
 .card_se{
-  line-height: 0.33rem;
+  line-height: 0.5rem;
   font-size:0.24rem;
-   text-indent:0.14rem;
+  text-indent:0.14rem;
 }
 .card_se img{
   display: inline-block;
   width: 0.25rem;
   height: 0.4rem;
  line-height: 0.33rem;
+ vertical-align: middle;
  
 }
 .card_se span{
   word-spacing:0.12rem;;
+   vertical-align: middle;
 
 }
 .cspan{
@@ -445,7 +454,7 @@ input::-webkit-input-placeholder {
 /* 秒杀 */
 .miaosha{
   width: 95vw;
-  height:4.36rem ;
+  height:3.8rem ;
   overflow: hidden;
 
   font-size:0.26rem; 
@@ -464,9 +473,9 @@ overflow: hidden;
   overflow: hidden;
   padding-right:0.22rem;
   padding-left:0.2rem;
-  
-
+ box-shadow: 0 0 4px #c8c8cd;
 }
+
 
 .miaosha_hea_b{
   display: inline-block;
@@ -477,7 +486,8 @@ overflow: hidden;
   font-size:0.2rem;
   line-height: 0.36rem;
   text-align:center;
-  border-radius: 0.1rem; 
+  border-radius: 0.1rem;
+ 
 }
 .miaosha_hea_r{
   color: #999999;
@@ -526,12 +536,16 @@ overflow: hidden;
 .tejia_hea_l span{
   width: 1.8rem;
   height:0.58rem ;
-  background:#fff8f2; 
+  background:#f5eadf; 
   color: #f9a449;
+  border-radius:0.5rem;
+  padding:0.04rem 0.22rem; 
+  box-shadow:0 0 spx #c8c8cd; 
 }
 .tejia_hea_l i{ 
-    color: #f9a449;
-background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(243, 203, 10, 1)), to(rgba(243, 107, 10, 1)));
+    background-image: -webkit-gradient(linear, left 0, right 0, from(rgb(235, 235, 24)), to(rgb(235, 103, 24)));
+    -webkit-background-clip: text; /*必需加前缀 -webkit- 才支持这个text值 */
+    -webkit-text-fill-color: transparent; /*text-fill-color会覆盖color所定义的字体颜色： */
  
 }
 .xianshimiaosha img{
