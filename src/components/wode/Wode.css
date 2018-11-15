@@ -100,24 +100,31 @@
     color:rgba(153,153,153,1);
 }
 .twose{
-margin-top:1rem;
-margin-bottom: 0.2rem;
-text-indent: 0.3rem;
+    width: 96vw;
+
+margin: 1.2rem auto 0;
+
+text-indent: 0.2rem;
+overflow: hidden;
  
 }
 .twose span:nth-child(1){
+    float: left;
     font-size:0.3rem;
     font-weight:600;
-    
+    line-height: 1rem;
 }
-.twose span:nth-child(2){
-    
-    font-size:0.28rem;
-    padding-left: 3.2rem; 
-}
-.twose i:nth-child(3){
-  
+.twose i:nth-child(2){
+    float: right;
     font-size:0.36rem; 
+    line-height: 1rem;
+    padding-right: 0.1rem;
+   
+}
+.twose span:nth-child(3){
+    float: right;
+    font-size:0.28rem;
+    line-height: 1rem;
    
 }
 .shengxiandingdan{
@@ -146,19 +153,20 @@ text-indent: 0.3rem;
 .tit{
     font-size:0.3rem;
     font-weight:600;
-    text-indent: 0.3rem;
+    text-indent: 0.2rem;
     line-height: 1rem;
 }
 .tita{
-width: 100vw;   
+width: 94vw;   
 display: flex;
 justify-content: space-around;
 flex-wrap: wrap;
 align-content: center;
 text-align: center;
+margin: 0.4rem auto 0.2rem;
 }
 .titb{
-    width: 1.38rem;
+    width: 1.5rem;
     height: 1.8rem;
 }
 .titb img{

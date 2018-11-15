@@ -1,7 +1,7 @@
 <template>
   <div>
       <div class="tit">
-         <i class="iconfont icon-left zitia"></i>
+         <i class="iconfont icon-left zitia" @click="jumpa"></i>
          <i class="iconfont icon-fenxiang zitib" @click="fnx"></i>
       </div>
       <div>
@@ -30,7 +30,7 @@
     </div>
       </div>
       <div class="footer" @click="tanchaun">
-          <p class="zuihou">兑换</p>
+          <p class="zuihou" >兑换</p>
       </div>
       <mt-popup
         v-model="popupVisible"
@@ -47,7 +47,7 @@
             </div>
             <div class="btn">
                 <span class="quxiao" @click="qux">取消</span>
-                <span class="que">确定</span>
+                <router-link class="que" to='duihuanjilu' tag="span">确定</router-link>
 
             </div>
            
@@ -99,6 +99,9 @@ export default {
       },
       fnxq(){
           this.popupVisibla=false
+      },
+      jumpa(){
+           this.$router.go(-1)
       }
   }
   

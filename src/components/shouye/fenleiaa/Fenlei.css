@@ -13,37 +13,43 @@
     position: fixed;
     background: #ffffff;
     width: 100vw;
+    z-index: 100;
 }
 .serash input{
-    width: 5.5rem;
+    width: 5.8rem;
     height:0.5rem ;
     font-size: 0.24rem; 
     text-indent: 0.3rem;
     background: #eeeeee;
     border-radius:0.25rem; 
     margin-top: -2rem;
+    margin-left: 0.4rem;
      
 }
 .liebiao{
     background: #eeeeee;
     width: 1.6rem;
-    height:10.8rem ;
+    height:12.8rem ;
     position:fixed;
     left: 0;
     top:0.83rem ;
     font-size: 0.24rem;
     line-height: 0.92rem;
     text-align: center;
+   
 }
 .shju{
-    width: 4.6rem; 
-   
-    float: right;
-    margin-top: 0.8rem;
+    width: 76.5%; 
+    position: absolute;
+    top:0.83rem;
+    right: 0;
+    z-index: 20;
+    
+    
 }
 .shjutu img{
-    width:4.6rem;
-    height:1.2rem;
+    width:5.72rem;
+    height:1.55rem;
 }
 
 .slide-box{
@@ -68,13 +74,14 @@ display:none;
     
     overflow: hidden;
 }
-.proaoula{
+.proaoula img{
     width: 1.6rem;
+    height: 1.6rem;
     float: left;
 
 }
 .proaoulb{
-   
+    width:3.6rem;   
     float: left;
     margin-left: 0.2rem;
 
@@ -87,7 +94,7 @@ display:none;
 
 .proatit{
     font-size: 0.28rem;
-    line-height:0.6rem;
+    line-height:0.74rem;
     color:#333333; 
     
 }
@@ -101,7 +108,7 @@ display:none;
 }
 .proaqian{
     font-size: 0.26rem;
-    line-height:0.4rem;
+    line-height:0.6rem;
    
 }
 .proaqian span{
@@ -109,8 +116,12 @@ display:none;
     font-weight:600;
 }
 .ziti{
+    float: right;
     font-size: 0.3rem;
     line-height:0.6rem;
     color: #ffa44d;
-    padding-left: 0.8rem;
+   
+}
+.red{
+    color: #ffa44d;
 }

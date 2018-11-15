@@ -23,7 +23,7 @@
    </div>
     
     <!-- 轮播 -->
-  <mt-swipe :auto="4000" class="lunbo"  :show-indicators="false">
+  <mt-swipe :auto="4000" class="lunbo"  :show-indicators="true">
     <mt-swipe-item class="lunboli"><img src="../../assets/lunbosucia1.jpg" alt=""></mt-swipe-item>
     <mt-swipe-item class="lunboli"><img src="../../assets/lunbosucia1.jpg" alt=""></mt-swipe-item>
     <mt-swipe-item class="lunboli"><img src="../../assets/lunbosucia1.jpg" alt=""></mt-swipe-item>
@@ -46,6 +46,7 @@
     </div>
     <div class="flr card_rimg">
       <img src="../../assets/logo.png" alt="">
+      <span class="chuxian">休息中</span>
     </div>
   </div>  
   <!-- 分类 -->
@@ -86,8 +87,7 @@
 <!-- 运营位 -->
 <mt-swipe :auto="4000" class="lunbo_two"  :show-indicators="false">
     <mt-swipe-item class="lunboli_two"><img src="../../assets/lunbosucia1.jpg" alt=""> <img src="../../assets/lunbosucia1.jpg" alt=""></mt-swipe-item>
-    <mt-swipe-item class="lunboli_two"><img src="../../assets/lunbosucia1.jpg" alt=""> <img src="../../assets/lunbosucia1.jpg" alt=""></mt-swipe-item>
-    <mt-swipe-item class="lunboli_two"><img src="../../assets/lunbosucia1.jpg" alt=""> <img src="../../assets/lunbosucia1.jpg" alt=""></mt-swipe-item>
+    
   </mt-swipe>
 <!-- 秒杀 -->
 <div class="miaosha">
@@ -402,7 +402,9 @@ input::-webkit-input-placeholder {
   text-indent:0.08rem;
   
 }
-
+.card_rimg{
+  position: relative;
+}
 .card_rimg img{
   width: 1rem;
   height: 1rem;
@@ -411,6 +413,19 @@ input::-webkit-input-placeholder {
   border-radius :0.1rem;
   background: #5ab54c; 
 }
+.card_rimg span{
+  position: absolute;
+  font-size: 0.16rem;
+  width: 1rem;
+  height: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  line-height: 1rem;
+  top: 0.23rem;
+  color: #ffffff;
+  border-radius:0.1rem; 
+}
+
 /* 分类 */
 .fenlie ul{
   display: flex;
@@ -525,10 +540,10 @@ overflow: hidden;
   font-weight: 600;
    font-size: 0.24rem;
 
-  text-indent: 0.1rem;
+  text-indent: 0.16rem;
 }
 .slide-box-sho i{
-  margin-right:0.1rem;
+  margin-right:0.16rem;
   color:#ffa550; 
 
 }
@@ -572,5 +587,11 @@ overflow: hidden;
 .neiyinying{
   padding-bottom:0.8rem;
   box-shadow:0px -5px 10px #99999975 inset;;  
+}
+.xiaoshi{
+  display: none;
+}
+.chuxian{
+ display: block;
 }
 </style>

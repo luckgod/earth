@@ -71,21 +71,22 @@
 
 }
 .kau{
-    width: 1.6rem;
+    width: 1.99rem;
     height: 2.22rem;
 }
 .jiimg{
-    width: 1.6rem;
-    height: 1.45rem;
+    width: 1.99rem;
+    height: 1.24rem;
     border-radius:0.02rem; 
 }
 .jiname{
     text-align: center;
     font-size: 0.22rem;
+    line-height: 0.45rem;
 }
 .jinaf{
     text-align: center;
     font-size: 0.16rem;
-    line-height: 0.42rem;
+    line-height: 0.46rem;
     color: #dfaa64;
 }

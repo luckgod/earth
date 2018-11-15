@@ -5,14 +5,14 @@
 
    
         <mt-navbar v-model="selected">
-            <mt-tab-item id="1"  @click.native.prevent="active = 'tab-container1'" >商家</mt-tab-item>
-            <mt-tab-item id="2"  @click.native.prevent="active = 'tab-container2'">评价</mt-tab-item>
-            <mt-tab-item id="3"  @click.native.prevent="active = 'tab-container3'">领券</mt-tab-item>
+            <mt-tab-item id="1"  @click.native.prevent="active = 'tab-container1'" :class="active=='tab-container1'?'is-selected':''">商家</mt-tab-item>
+            <mt-tab-item id="2"  @click.native.prevent="active = 'tab-container2'" :class="active=='tab-container2'?'is-selected':''">评价</mt-tab-item>
+            <mt-tab-item id="3"  @click.native.prevent="active = 'tab-container3'" :class="active=='tab-container3'?'is-selected':''">领券</mt-tab-item>
         </mt-navbar>
      </div>    
     <div class="page-tab-container">
-      <mt-tab-container class="page-tabbar-tab-container" v-model="active" swipeable>
-        <mt-tab-container-item id="tab-container1">
+      <mt-tab-container class="page-tabbar-tab-container" v-model="active" >
+        <mt-tab-container-item id="tab-container1" >
         	<ul class="shajia" style="font-size:0.26rem;margin-left:0.4rem; line-height: 0.9rem; color: #666666;">
                 <li> <i style=" margin-right: 0.16rem" class="iconfont icon-Group- "></i><span style=" text-indent:0.16rem;">萧山区钱江世纪城广场路</span></li>
                 <li> <i style=" margin-right: 0.16rem" class="iconfont icon-shijian "></i><span style=" text-indent:0.16rem; ">营业时间：8:20-22:30</span></li>
@@ -22,7 +22,7 @@
                 
             </ul>   
         </mt-tab-container-item>
-        <mt-tab-container-item id="tab-container2">
+        <mt-tab-container-item id="tab-container2" >
         	<!-- cell组件 -->
          <div v-bind:class="{ pingjun: isActive }">
              <div v-bind:class="{pingfen:true}">
@@ -49,7 +49,7 @@
                         <li :class="{flr:true}">
                             <ul  >
                                 <li>
-                                    <ul :class="{fll:true}"  style="width:4.7rem;height:0.44rem">
+                                    <ul :class="{fll:true}"  style="width:5.5rem;height:0.44rem">
                                         <li :class="{renping_yonghuming:true,fll:true}">租田种菜</li>
                                         <li>
                                             <div>
@@ -86,7 +86,7 @@
                         <li :class="{flr:true}">
                             <ul  >
                                 <li>
-                                    <ul :class="{fll:true}"  style="width:4.7rem;height:0.44rem">
+                                    <ul :class="{fll:true}"  style="width:5.7rem;height:0.44rem">
                                         <li :class="{renping_yonghuming:true,fll:true}">租田种菜</li>
                                         <li>
                                             <div>
@@ -115,7 +115,7 @@
              </ul>
          </div>
         </mt-tab-container-item>
-        <mt-tab-container-item id="tab-container3">
+        <mt-tab-container-item id="tab-container3"  >
         	<!-- juan -->
             <div class="youhuijuan">
                 <div class="banyuana"></div>
@@ -133,7 +133,22 @@
                     </div>
                 </div>
             </div>
-            
+             <div class="youhuijuan">
+                <div class="banyuana"></div>
+                <div class="banyuanb"></div>
+                <div class="youhuijuannei"  >
+                    <div class="youhuijuanneifenge">
+                        <div class="youhuijuanmianzhi">￥10</div>
+                        <div class="youhuijuanbtn" >领取</div>
+                        
+                    </div>
+                    <div class="flra">
+                        <p class="youhuijuanmainshua">太阳公社10元新人红包</p>
+                        <p class="youhuijuanmainshub">可与积分同时使用</p>
+                        <p class="youhuijuanmainshub">有效期至2018.9.10</p>
+                    </div>
+                </div>
+            </div>
             
         </mt-tab-container-item>
       </mt-tab-container>
@@ -148,11 +163,11 @@ import boa from "../../../assets/boluu.png"
 var starOffImg = bo;
 var starOnImg = boa;
 export default {
-  name: 'Huoquweizhi',
+  name: 'Shangjiaifo',
       data () {
     return {
     msg: 'moban',
-    active:'tab-container3',
+    active:'tab-container1',
     selected:1,
     isActive:true,
     stars: [{
@@ -179,7 +194,7 @@ export default {
     
   },
   mounted:function(){
-      console.log(this.$route.query.num)
+     
       
      this._data.active=this.$route.query.num
   },

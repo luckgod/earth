@@ -11,7 +11,7 @@
 }
 .miaosh_her{
     display: inline-block;
-    margin-left: 1.8rem;
+    margin-left: 2.8rem;
 }
 .shijian{
     width:2rem;
@@ -36,9 +36,10 @@
 }
 .fanhui{
     position: absolute;
-    font-size: 0.35rem;
+    font-size: 0.48rem;
     top: 0.2rem;
     left:0.2rem;
+    
 }
 .shijiana{
     display: inline-block;
@@ -83,8 +84,10 @@
 }
 .shangpinxiangqing_three_jiage span:nth-child(3){
     font-size: 0.2rem;
-    padding-left: 3rem;
+   
     color:  #333333;
+    float: right;
+    margin-top:0.3rem; 
 }
 .gouwu{
     position: absolute;
@@ -120,13 +123,17 @@
     display:none;
   }
   .slide-box-oli{
-    width: 32vw;
-   
-    text-align: center;
+    width: 32vw; 
+  }
+  .slide-box-oimg{
+      width: 1.79rem;
+      height: 1.62rem;
+      padding-left: 0.12rem;
   }
   .slide-box-na{
     line-height:0.66rem; 
     font-size: 0.24rem;
+    text-indent: 0.05rem;
   }
   .slide-box-sho{
     overflow: hidden;
@@ -187,7 +194,9 @@
     background:#f5a623 ;
     padding:0.12rem 0.3rem ;
     border-radius:0.16rem;
-    margin-left: 0.6rem;
+   margin-right: 0.2rem;
+    float: right;
+    margin-top:0.2rem; 
   } 
   .shangpinxiangqing_five span:nth-child(4){
     font-size: 0.24rem;
@@ -196,6 +205,9 @@
     background:#7ed320 ;
     padding:0.12rem 0.3rem;
     border-radius:0.16rem; 
+    float: right;
+    margin-top:0.2rem; 
+    margin-right: 0.2rem;
   } 
   .zitifivk{
     font-size: 0.4rem;

@@ -7,7 +7,7 @@
             <mt-swipe-item class="lunboli_two"><img src="../../../assets/logo.png" alt=""></mt-swipe-item>
         </mt-swipe>
           
-          <i class="iconfont icon-left  fanhui"></i>
+          <i class="iconfont icon-left  fanhui" @click="fanhu"></i>
       </div>
       <div class="miaosh-he"> 
           <span>限量特价中</span>
@@ -26,7 +26,7 @@
           <ul>
               <li class="shangpinxiangqing_three_name"><span>赣南高级脐橙2个</span></li>
               <li class="shangpinxiangqing_three_jianjie"><span>商品简介</span></li>
-              <li class="shangpinxiangqing_three_jiage"><span>¥8.80</span><span>¥9.80</span> <span>已售112</span></li>
+              <li class="shangpinxiangqing_three_jiage"><span>¥8.80</span><span>¥9.80</span> <span>已售134542</span></li>
           </ul>
          <i class="iconfont icon-fenxiang  gouwu" @click="fnx"></i>
       </div>
@@ -37,22 +37,22 @@
             <div class="miaosha_pro">
                 <ul class="slide-box">
                 <li class="slide-box-oli">
-                    <div><img src="../../../assets/logo.png" alt=""></div>
+                    <div  class="slide-box-oimg"><img src="../../../assets/logo.png" alt=""></div>
                     <div  class="slide-box-na">赣南高级脐橙2个</div>
                     <div class="slide-box-sho"><span class="fll">¥8.80</span><i class="iconfont icon-gouwuche flr"></i></div>
                 </li>
                 <li class="slide-box-oli">
-                    <div><img src="../../../assets/logo.png" alt=""></div>
+                    <div  class="slide-box-oimg"><img src="../../../assets/logo.png" alt=""></div>
                     <div  class="slide-box-na">赣南高级脐橙2个</div>
                     <div class="slide-box-sho"><span class="fll">¥8.80</span><i class="iconfont icon-gouwuche flr"></i></div>
                 </li>
                 <li class="slide-box-oli">
-                    <div><img src="../../../assets/logo.png" alt=""></div>
+                    <div  class="slide-box-oimg"><img src="../../../assets/logo.png" alt=""></div>
                     <div  class="slide-box-na">赣南高级脐橙2个</div>
                     <div class="slide-box-sho"><span class="fll">¥8.80</span><i class="iconfont icon-gouwuche flr"></i></div>
                 </li>
                 <li class="slide-box-oli">
-                    <div><img src="../../../assets/logo.png" alt=""></div>
+                    <div  class="slide-box-oimg"><img src="../../../assets/logo.png" alt=""></div>
                     <div  class="slide-box-na">赣南高级脐橙2个</div>
                     <div class="slide-box-sho"><span class="fll">¥8.80</span><i class="iconfont icon-gouwuche flr"></i></div>
                 </li>
@@ -71,9 +71,9 @@
           </div>
       </div>
       <div class="shangpinxiangqing_five">
-        <span><i class="iconfont icon-kefu1 zitifivk"></i></span>
-        <span><i class="iconfont icon-gouwuche  zitifivc"></i><div class="pronum">0</div></span>
-        <span>立即购买</span>
+        <span @click="kefu"><i class="iconfont icon-kefu1 zitifivk"></i></span>
+        <router-link to='shopcar' tag="span"><i class="iconfont icon-gouwuche  zitifivc"></i><div class="pronum">0</div></router-link>
+        <router-link to='querendingdan' tag="span">立即购买</router-link>
         <span>加入购物车</span>
         
       </div>
@@ -98,6 +98,7 @@
   </div>
 </template>
 <script>
+import { MessageBox } from 'mint-ui';
 export default {
   name: 'Qianggouxiangqing',
       data () {
@@ -113,6 +114,16 @@ export default {
       },
       fnxq(){
           this.popupVisible=false
+      },
+      kefu(){
+          MessageBox({
+             title: '',
+            message: '1234687879879?',
+            showCancelButton: true
+            });
+      },
+      fanhu(){
+          this.$router.go(-1)
       }
   }
   

@@ -17,12 +17,12 @@ label {                 /*设置label的样式*/
     background: url(../../assets/img/a.png) no-repeat;
     background-size: cover;
 }
-.radio input[type="radio"] {  /*为了保险起见，把原生样式隐藏掉*/
+.radio input[type="checkbox"] {  /*为了保险起见，把原生样式隐藏掉*/
     display: inline-block ;
     margin-right: 0.15rem ;
     opacity: 0 ;
 }
-input[type="radio"]:checked+div {  /*当radiuo被选中时，把input下边的div标签的背景图片替换掉*/
+input[type="checkbox"]:checked+div {  /*当radiuo被选中时，把input下边的div标签的背景图片替换掉*/
     background: url(../../assets/img/b.png) no-repeat;
     background-size: cover;
 }
@@ -212,7 +212,8 @@ text-indent: 0.2rem;
     text-align: center;
     line-height: 0.58rem;
     border-radius:0.12rem;
-    margin-top: 0.1rem; 
+    margin-top: 0.1rem;
+   margin-left: 0.3rem;
 }
 .dingweiweb{
     position: absolute;

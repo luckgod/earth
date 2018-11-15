@@ -11,7 +11,7 @@
 }
 .miaosh_her{
     display: inline-block;
-    margin-left: 1.8rem;
+    margin-left: 2.8rem;
 }
 .shijian{
     width:2rem;
@@ -46,7 +46,8 @@
 }
 .cara_miaoa{
     font-size: 0.28rem;
-    padding-bottom:0.44rem; 
+    padding-bottom:0.44rem;
+    width: 65vw; 
 }
 .cara_miaob{
     font-size: 0.2rem;
@@ -61,11 +62,14 @@
     margin-left: 0.3rem;
 }
 .cara_jia{
-    font-size: 0.22rem;
+    font-size: 0.32rem;
     font-weight: 600;
     color:#fd342d;
+    line-height: 0.45rem;
 }
 .ziti{
-    padding-left: 2.4rem;
+    float: right;
     color: #fca74c;
+    font-size: 0.40rem;
+    margin-top: 0.55rem;
 }

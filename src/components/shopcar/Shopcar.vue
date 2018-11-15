@@ -9,7 +9,7 @@
                            <div class="dingweiwe">
                             <div class="radio" > 
                                     <label>
-                                        <input type="radio" name="sex" value="" />
+                                        <input type="checkbox" name="sex" value="" />
                                         <div class="option"></div><!--该div盛放的是优化后的按钮图片-->
                                     
                                     </label>
@@ -27,14 +27,14 @@
                               </div>
                           </div>
                           <div class="rughtb">
-                              <i class="iconfont icon-jian zita"></i>
-                              <span>0</span>
-                               <i class="iconfont icon-jia zitb"></i>
+                              <i class="iconfont icon-jian zita" @click="add"></i>
+                              <span>{{pronum}}</span>
+                               <i class="iconfont icon-jia zitb" @click="jian"></i>
                           </div>
                            <div class="dingweiwe">
                             <div class="radio" > 
                                     <label>
-                                        <input type="radio" name="sex" value="" />
+                                        <input type="checkbox" name="sex" value="" />
                                         <div class="option"></div><!--该div盛放的是优化后的按钮图片-->
                                     
                                     </label>
@@ -53,7 +53,7 @@
                            <div class="dingweiwe">
                             <div class="radio" > 
                                     <label>
-                                        <input type="radio" name="sex" value="" />
+                                        <input type="checkbox" name="sex" value="" />
                                         <div class="option"></div><!--该div盛放的是优化后的按钮图片-->
                                     
                                     </label>
@@ -78,7 +78,7 @@
                            <div class="dingweiwe">
                             <div class="radio" > 
                                     <label>
-                                        <input type="radio" name="sex" value="" />
+                                        <input type="checkbox" name="sex" value="" />
                                         <div class="option"></div><!--该div盛放的是优化后的按钮图片-->
                                     
                                     </label>
@@ -97,13 +97,13 @@
                           </div>
                           <div class="rughtb">
                               <i class="iconfont icon-jian zita"></i>
-                              <span>0</span>
+                              <span>{{pronum}}</span>
                                <i class="iconfont icon-jia zitb"></i>
                           </div>
                            <div class="dingweiwe">
                             <div class="radio" > 
                                     <label>
-                                        <input type="radio" name="sex" value="" />
+                                        <input type="checkbox" name="sex" value="" />
                                         <div class="option"></div><!--该div盛放的是优化后的按钮图片-->
                                     
                                     </label>
@@ -215,14 +215,14 @@
                     <p>合计：¥49.00</p>
                     <p>（需要配送费5元，支持自提）</p>
                   </li >
-                  <li class="four_se_oli olic"><p>选好了</p></li>
+                  <li class="four_se_oli olic"><router-link to='querendingdan' tag="p">选好了</router-link></li>
               </ul>
               <div class="dingweiweb">
                             <div class="radio" > 
                                     <label>
-                                        <input type="radio" name="sex" value="" />
+                                        <input type="checkbox" name="sex" value="" />
                                         <div class="option"></div><!--该div盛放的是优化后的按钮图片-->
-                                    
+                                       
                                     </label>
                                 </div>
                             </div> 
@@ -234,9 +234,18 @@ export default {
   name: 'Shopcar',
       data () {
     return {
-      msg: 'moban'
+      msg: 'moban',
+      pronum:1,
     }
-  }
+  },
+  methods: {
+      add() {
+          this.pronum++
+      },
+      jian(){
+          this.pronum--
+      }
+  },
   
 }
 </script>

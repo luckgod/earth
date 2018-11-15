@@ -36,10 +36,10 @@
               <li class="cara_miao">
                 <p class="cara_miaoa">赣南高级脐橙2个</p>
                 <p class="cara_miaob">已售222个 </p>
-                <div>
+               
                 <span class="cara_jia">￥8.80</span>
                 <i class="iconfont icon-gouwuche ziti"></i>
-                </div>
+               
               </li>
           </ul>
       </div>

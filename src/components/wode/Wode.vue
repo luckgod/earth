@@ -2,7 +2,8 @@
   <div>
       <div class="onese">
           <div class="shezhi" @click="jumpb"></div>
-          <div class="xiaoxi" @click="jumpg"></div>
+         
+          <router-link :to="{path:'/xiaoxizhongxin',query:{tab:'tab1'}}" class="xiaoxi" tag="div"></router-link>
           <div class="gerencar">
               <div class="warpa" @click="jumpc">
                   <img class="utou" src="../../assets/logo.png" alt="">
@@ -14,9 +15,9 @@
                 <div>
                     <div>
                             <ul class="huyu">
-                                <li class="huyuka"><p>¥0</p> <span>会员卡</span></li>
-                                <li class="huyukb"><p>1</p> <span>优惠券</span></li>
-                                <li class="huyukc"><p>62</p> <span>积分</span></li>
+                                <router-link class="huyuka" to='huiyuanka' tag="li"><p>¥0</p> <span>会员卡</span></router-link>
+                                <router-link class="huyukb" to='fukuanmaw' tag="li"><p>1</p> <span>优惠券</span></router-link>
+                                <router-link class="huyukc" to="duihuanjilu" tag="li"><p>62</p> <span>积分</span></router-link>
                             </ul>
                     </div>
                   
@@ -25,8 +26,9 @@
       </div>
       <div class="twose">
          <span>生鲜订单</span>
+          <i class="iconfont icon-right twoseb"></i>
          <span>全部</span>
-         <i class="iconfont icon-right twoseb"></i>
+        
       </div>
         <div class="shenga">
                         <ul class="shengxiandingdan">
@@ -41,11 +43,12 @@
             <p class="tit">常用功能</p>
             <div>
                 <ul class="tita"> 
-                    <li class="titb teshu" @click="jumpf"><img src="../../assets/img/4.png" alt=""><p>物业缴纳</p></li>
-                    <li class="titb"  @click="jumpd" ><img src="../../assets/img/5.png" alt=""><p>收货地址</p></li>
-                    <li class="titb"><img src="../../assets/img/6.png" alt=""><p>资金管理</p></li>
-                    <li class="titb"><img src="../../assets/img/7.png" alt=""><p>积分商城</p></li>
-                    <li class="titb" @click="jumpa"><img src="../../assets/img/8.png" alt=""><p>帮助反馈</p></li>
+                    <router-link class="titb teshu"  to="wuyefeidikou" tag='li'><img src="../../assets/img/4.png" alt=""><p>物业缴纳</p></router-link>
+                    <router-link class="titb"   to="dizhi" tag='li' ><img src="../../assets/img/5.png" alt=""><p>收货地址</p></router-link >
+                    <router-link class="titb" to="huiyuanka" tag='li'><img src="../../assets/img/6.png" alt=""><p>资金管理</p></router-link>
+                   
+                    <router-link class="titb" to="jifenshangcheng" tag='li'><img src="../../assets/img/7.png" alt=""><p>积分商城</p></router-link>
+                    <router-link class="titb"  to="bangzhuzhongxin" tag='li'><img src="../../assets/img/8.png" alt=""><p>帮助反馈</p></router-link>
                     <li class="titb"  @click="jumpe"><img src="../../assets/img/9.png" alt=""><p>客服中心</p></li>
                     <li class="titb"><img src="../../assets/img/10.png" alt=""><p>加盟合作</p></li>
                     <li class="titb"></li>
@@ -66,18 +69,14 @@ export default {
     }
   },
   methods:{
-      jumpa(){
-          this.$router.push({path:'/bangzhuzhongxin'})
-      },
+     
        jumpb(){
           this.$router.push({path:'/Shezhi'})
       },
       jumpc(){
            this.$router.push({path:'/gerenziliao'})
       },
-       jumpd(){
-           this.$router.push({path:'/dizhi'})
-      },
+     
         jumpe(){
                     MessageBox({
                             title:'',
@@ -87,12 +86,8 @@ export default {
                             confirmButtonClass:'chanco'
                             });
       },
-        jumpf(){
-           this.$router.push({path:'/wuyefeidikou'})
-      },
-      jumpg(){
-          this.$router.push({path:'/xiaoxizhongxin'})
-      }
+      
+      
 
   }
   

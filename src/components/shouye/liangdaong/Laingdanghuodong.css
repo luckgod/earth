@@ -1,14 +1,14 @@
 
 .kimg{
-    width:5.8rem;
-    height:3.8rem;
+    width:6.6rem;
+    height:2.9rem;
 }
 
 .lunbo{
-    width:5.8rem;
-    height:3.8rem;
+    width:6.6rem;
+    height:2.9rem;
     margin: 0.36rem auto;
-    box-shadow:0 0.1rem 0.2rem #1d181847;
+    box-shadow:0rem 0.2rem 0.2rem #aaaaaa;
 }
 
 /* gousu */
@@ -28,7 +28,7 @@
 
 }
 .proaoulb{
-   
+   width: 58vw;
     float: left;
     margin-left: 0.3rem;
 
@@ -50,7 +50,7 @@
 }
 .proayishou{
     font-size: 0.24rem;
-    line-height:0.68rem;
+    line-height:0.46rem;
     color:#333333; 
 }
 .proaqian{
@@ -66,5 +66,5 @@
     font-size: 0.36rem;
     line-height:0.8rem;
     color: #ffa44d;
-    padding-left: 2.2rem;
+    float: right;
 }

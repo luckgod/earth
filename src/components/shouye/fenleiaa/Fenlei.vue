@@ -7,17 +7,7 @@
      </div>
      <div class="liebiao">
        <ul>
-         <li><span>新鲜蔬菜</span></li>
-         <li><span>安心水果</span></li>
-          <li><span>海鲜水产</span></li>
-          <li><span>豆制品</span></li>
-         <li><span>肉禽蛋</span></li>
-         <li><span>时令新品 </span></li>
-         <li><span>营养早餐</span></li>
-         <li><span>乳制品</span></li>
-         <li><span>冰淇淋</span></li>
-         <li><span>酒水饮料</span></li>
-         <li><span>米面粮油</span></li>
+         <li v-for="(list,index) in navLists" class="nav" :class="{ red:changeRed == index}" @click.stop="reds(index)" :key='index'>{{list.text}}</li>
          
        </ul>
      </div>
@@ -26,16 +16,8 @@
          <img src="../../../assets/logo.png">
        </div>
       <div class="slide-box">
-        <div class="slide-item">特价</div>
-        <div class="slide-item">根茎类</div>
-        <div class="slide-item">叶菜类</div>
-        <div class="slide-item">葱蒜类</div>
-        <div class="slide-item">茄果类</div>
-        <div class="slide-item">特价</div>
-        <div class="slide-item">根茎类</div>
-        <div class="slide-item">叶菜类</div>
-        <div class="slide-item">葱蒜类</div>
-        <div class="slide-item">茄果类</div>
+           <div v-for="(list,index) in navListsa" class="slide-item" :class="{ red:changeReda == index}" @click.stop="redsa(index)" :key='index'>{{list.text}}</div>
+       
     </div>
      <div>
         <div class="proa">
@@ -112,8 +94,88 @@ export default {
   name: 'Fenlei',
       data () {
     return {
-      msg: 'Fenlei'
+      msg: 'Fenlei',
+        navLists:[
+                    {
+                        "text":"新鲜蔬菜"                     
+                    },
+                    {
+                        "text":"安心水果"                     
+                    },
+                    {
+                        "text":"海鲜水产"                        
+                    },
+                    {
+                        "text":"豆制品"                     
+                    },
+                     {
+                        "text":"肉禽蛋"                     
+                    },
+                     {
+                        "text":"时令新品"                     
+                    },
+                     {
+                        "text":"营养早餐"                     
+                    },
+                     {
+                        "text":"冰淇淋"                     
+                    },
+                    {
+                        "text":"酒水饮料"                     
+                    },
+                    {
+                        "text":"米面粮油"                     
+                    },
+                ],
+                changeRed:0,
+                navListsa:[
+                    {
+                        "text":"特价"                     
+                    },
+                    {
+                        "text":"根茎类"                     
+                    },
+                    {
+                        "text":"叶菜类"                        
+                    },
+                    {
+                        "text":"葱蒜类"                     
+                    },
+                     {
+                        "text":"茄果类"                     
+                    },
+                     {
+                        "text":"根茎类"                     
+                    },
+                     {
+                        "text":"叶菜类"                     
+                    },
+                     {
+                        "text":"葱蒜类"                     
+                    },
+                    {
+                        "text":"茄果类"                     
+                    },
+                    {
+                        "text":"葱蒜类"                     
+                    },
+                ],
+                changeReda:0,
+            
     }
+  },
+  methods:{
+      chaundi(e){
+          console.log(e.target)
+      },
+      reds:function(index){
+                    this.changeRed = index;
+        },
+         redsa:function(index){
+                    this.changeReda = index;
+        }
+
+
   }
   
 }

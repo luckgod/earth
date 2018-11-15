@@ -15,7 +15,7 @@
            <!-- tab-container -->
       <div class="tabcon">
       <div class="page-tab-container">
-        <mt-tab-container class="page-tabbar-tab-container" v-model="active" swipeable>
+        <mt-tab-container class="page-tabbar-tab-container" v-model="active" >
           
             <mt-tab-container-item id="tab1">
             <div class="yijianhuifu">

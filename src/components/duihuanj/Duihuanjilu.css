@@ -19,10 +19,11 @@
     line-height: 0.7rem;
 }
 .itmhz{
+    float: right;
     font-size: 0.24rem;
     font-weight:400;
     line-height: 0.7rem;
-    padding-left: 0.5rem;
+    margin-top: 0.4rem;
 }
 .woula{
    margin-top: 0.4rem;
