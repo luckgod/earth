@@ -1,5 +1,5 @@
 .warp{
-    box-shadow:0 2px 5px rgb(219, 207, 207) inset;
+    box-shadow:0 0 5px rgb(219, 207, 207) ;
     height: 100vh;
     padding-top: 0.32rem;
 }

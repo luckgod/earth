@@ -55,18 +55,36 @@
                 <p>支付时间：2018-05-31 10:32:12</p>    
             </div>
             </div>  
-             
+             <div class="wapre">
+               
+                <p @click="tao">确认收货</p>
+                <p>退款</p>
+            </div> 
   </div>
   
 </template>
 <script>
+import { MessageBox } from 'mint-ui';
 export default {
   name: 'Daishouhuo',
       data () {
     return {
       msg: 'moban'
     }
-  }
+  },
+  methods: {
+      tao() {
+          MessageBox({
+        title: '收货成功',
+        message: '您已获得200积分',
+        showCancelButton: true,
+        cancelButtonText:'返回首页',
+        confirmButtonText:'去评价',
+        confirmButtonClass:'yansea',
+        cancelButtonClass:'yanseb',
+        }); 
+      }
+  },
   
 }
 </script>

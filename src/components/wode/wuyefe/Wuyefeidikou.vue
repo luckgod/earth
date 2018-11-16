@@ -68,9 +68,9 @@
             
           </ul>
       </div>
-    <div class="btn">
+    <router-link class="btn" to="Wuyejiaona" tag="div">
         <p >缴纳/抵扣物业费</p>
-    </div> 
+    </router-link> 
   </div>
 </template>
 <script>

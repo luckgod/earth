@@ -99,3 +99,76 @@ vertical-align: middle;
 .yaseab{
     background:#cccccc;
 }
+.warpa{
+    width: 86vw;
+    border-radius:0.2rem; 
+}
+.one_ssa{
+    margin: 0 0.4rem;
+    border-bottom: 1px solid #c3b4b438;
+}
+.one_ssa span{
+    font-size: 0.28rem;
+    line-height: 1.2rem;
+}
+.one_ssa i{
+    font-size: 0.36rem;
+   float: right;
+   line-height: 1.2rem;
+}
+.one_ssb{
+    margin: 0 0.4rem;
+    padding-bottom:0.4rem; 
+}
+.one_ssba i{
+    color:#5BB54D;
+}
+.one_ssbb i{
+    color:#4A90E2;
+}
+.one_ssba{
+   
+    position: relative;
+}
+.one_ssbb{
+    
+    position: relative;
+}
+/* anniu */
+label {                 /*设置label的样式*/
+    width: 100%;
+    padding: 0.1rem 0;
+    display: block;
+    line-height: 0.2rem;
+    position: relative;
+    font-weight: normal;
+}
+.radio .option {      /*把优化后的按钮图片设置为该div的背景图片，把该div定位到原生样式的上方，遮盖住原生样式。*/
+    width: 0.4rem;
+    height:0.4rem;
+    position: absolute;
+    top: 0.1rem;
+    left: 0;
+    background-size: cover;
+    background: url(../../../assets/img/a.png) no-repeat;
+    background-size: cover;
+}
+.radio input[type="radio"] {  /*为了保险起见，把原生样式隐藏掉*/
+    display: inline-block ;
+    margin-right: 0.15rem ;
+    opacity: 0 ;
+}
+input[type="radio"]:checked+div {  /*当radiuo被选中时，把input下边的div标签的背景图片替换掉*/
+    background: url(../../../assets/img/b.png) no-repeat;
+    background-size: cover;
+}
+.diangw{
+    position: relative;
+}
+
+.dingweiwe{
+    position: absolute;
+    right: 0.3rem;
+    top:0.3rem;
+}
+/*  */

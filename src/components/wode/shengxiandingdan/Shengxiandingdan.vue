@@ -52,7 +52,7 @@
                           <p>待付款</p>
                       </div>
                       <div>
-                          <p>取消订单</p>
+                          <p @click="quxiaota">取消订单</p>
                       </div>
                   </div>
               </div>
@@ -120,7 +120,7 @@
                           
                       </div>
                       <div >
-                          <p >退款</p>
+                          <router-link to="Shenqingtuikuan" tag="p">退款</router-link>
                       </div>
                   </div>
               </div>
@@ -154,7 +154,7 @@
                   </div>
                   <div class="btn_a">
                       <div>
-                          <p>去评价</p>
+                         <router-link to='Pingjia' tag="p">去评价</router-link>
                       </div>
                       <div>
                          
@@ -232,7 +232,7 @@
                           <p>待付款</p>
                       </div>
                       <div>
-                          <p>取消订单</p>
+                            <p @click="quxiaota">取消订单</p>
                       </div>
                   </div>
               </div>
@@ -267,7 +267,7 @@
                           <p>待付款</p>
                       </div>
                       <div>
-                          <p>取消订单</p>
+                            <p @click="quxiaota">取消订单</p>
                       </div>
                   </div>
               </div>
@@ -337,7 +337,7 @@
                           
                       </div>
                       <div >
-                          <p >退款</p>
+                          <router-link to='Daishouhuo' tag="p" >确定收货</router-link>
                       </div>
                   </div>
               </div>
@@ -373,7 +373,7 @@
                   </div>
                   <div class="btn_a">
                       <div>
-                          <p>去评价</p>
+                          <router-link to='Pingjia' tag="p">去评价</router-link>
                       </div>
                       <div>
                          
@@ -389,6 +389,7 @@
   </div>
 </template>
 <script>
+import { MessageBox } from 'mint-ui';
 export default {
   name: 'Shengxiandingdan',
       data () {
@@ -397,6 +398,15 @@ export default {
        active: 'tab2',
        selected:'tab1',
     }
+  },
+  methods:{
+      quxiaota(){
+          MessageBox({
+            title: '提醒',
+            message: '确认取消订单?',
+            showCancelButton: true
+            });
+      }
   }
   
 }

@@ -151,40 +151,33 @@ line-height: 0.6rem;
     background: #ffffff;
 }
 .wapre p:nth-child(1){
-    float: left;
-    line-height: 0.98rem;
-    text-indent: 0.2rem;
-}
-.wapre p:nth-child(1) span{
-    color: #ff5252;
-}
-.wapre p:nth-child(2){
-    width: 1.62rem;
-    height:0.65rem;
-   
-    text-align: center;
-    line-height: 0.65rem;
-    margin-top: 0.2rem;
-    border: 1px solid #b3b3b3;
-    border-radius:0.1rem; 
-    margin-left: 0.2rem;
-}
-.waprea  p:nth-child(2){
-    float: right;
-    margin-right: 0.2rem;
-    margin-top: 0.16rem;
-}
-.wapre p:nth-child(3){
-    width: 1.46rem;
-    height:0.66rem;
-    height:0.65rem;
-    text-align: center;
-    line-height: 0.65rem;
-    margin-top: 0.2rem;
-    border-radius:0.1rem; 
-    float: left;
-   background: #ffaf00;
-   color: #ffffff;
-   margin-left: 0.2rem; 
+   width: 1.81rem;
+   height: 0.64rem;
+   text-align: center;
+   line-height: 0.64rem;
+   float: right;
+   background: #FFAF00;
+   margin-top: 0.2rem;
+   margin-right: 0.2rem;
+   border-radius: 0.1rem;
+   color:#ffffff;
 }
 
+.wapre p:nth-child(2){
+    width: 1.81rem;
+   height: 0.64rem;
+   line-height: 0.64rem;
+   float: right;
+   text-align: center;
+   border-radius: 0.1rem;
+   margin-top: 0.2rem;
+   margin-right: 0.2rem;
+   border: 1px solid #a4a4a4;
+   box-sizing: border-box;
+}
+.yansea{
+color:#999999;
+}
+.yanseb{
+color: cornflowerblue;
+}

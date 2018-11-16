@@ -32,7 +32,7 @@
       </div>
         <div class="shenga">
                         <ul class="shengxiandingdan">
-                            <li class="items"><img src="../../assets/img/11.png" alt=""><p>待付款</p></li>
+                            <router-link class="items" to="Shengxiandingdan" tag="li"><img src="../../assets/img/11.png" alt=""><p>待付款</p></router-link>
                             <li class="items"><img src="../../assets/img/12.png" alt=""><p>待发货</p></li>
                             <li class="items"><img src="../../assets/img/13.png" alt=""><p>待收货</p></li>
                             <li class="items"><img src="../../assets/img/14.png" alt=""><p>待评价</p></li>
