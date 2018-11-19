@@ -54,31 +54,31 @@
     <ul>
       <li>
         <div>
-            <i class="iconfont icon-wodeyouhuijuan"></i>
+            <i class="iconfont icon-shuiguo"></i>
         </div>
         <span>新鲜水果</span>
       </li>
       <li>
         <div>
-            <i class="iconfont icon-wodeyouhuijuan"></i>
+            <i class="iconfont icon-shucai  "></i>
         </div>
         <span>安心蔬菜</span>
       </li>
       <li>
         <div>
-            <i class="iconfont icon-wodeyouhuijuan"></i>
+            <i class="iconfont icon-roulei"></i>
         </div>
         <span>肉禽类</span>
       </li>
       <li>
         <div>
-            <i class="iconfont icon-wodeyouhuijuan"></i>
+            <i class="iconfont icon-haixian"></i>
         </div>
         <span>水产海鲜</span>
       </li>
       <li @click="jumpg">
         <div >
-            <i class="iconfont icon-wodeyouhuijuan"></i>
+            <i class="iconfont icon-more_light"></i>
         </div>
         <span >更多</span>
       </li>
@@ -149,7 +149,7 @@
     <ul>
       <li class="fll tejia_hea_l">
         <span>特价商品</span>
-        <i class="iconfont icon-boluo"></i>
+        <i class="iconfont icon-huoyan"></i>
       </li>
       <li class="flr miaosha_hea_r" @click="jumpd">
           <span>更多</span>
@@ -226,6 +226,7 @@
 
 <script>
   import Vue from 'vue';
+  import axios from "axios"
  import { Swipe, SwipeItem } from 'mint-ui';
 
 Vue.component(Swipe.name, Swipe);
@@ -275,7 +276,19 @@ export default {
     },
     jumph(){
        this.$router.push({path:'/fukuanma'})
+    },
+    async  fetchData(){
+    
+      console.log(this.dataApi)
+     this.dataApi.zajax('selectOperate',{operType:'TW'},
+        res =>{
+          console.log(res)
+        }
+        )
     }
+},
+created:function(){
+  
 }
 }
 
@@ -322,13 +335,13 @@ export default {
 }
 .ser input{
 width: 3.06rem;
-height: 0.4rem;
+height: 0.5rem;
 border-radius:0.2rem;
  background:#83c878;
  text-indent: 0.2rem;
  color: #ffffff;
- font-size:0.2rem; 
- line-height: 0.4rem;
+ font-size:0.24rem; 
+ line-height: 0.5rem;
  
 }
 .twose{
@@ -343,6 +356,7 @@ border-radius:0.2rem;
  
 }
 input::-webkit-input-placeholder {
+  
  
      color: #ffffff;
  }
@@ -446,9 +460,14 @@ input::-webkit-input-placeholder {
   border-radius: 0.41rem;
   background: #5ab54c;
   color: #ffffff;
-  line-height: 0.82rem;
+ 
   text-align: center;
-  font-size: 0.4rem;
+ 
+}
+.fenlie ul li div i{
+ font-size: 0.52rem;
+ line-height: 0.82rem;
+ 
 }
 .fenlie ul li span{
   line-height: 0.64rem;

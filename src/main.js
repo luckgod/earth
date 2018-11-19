@@ -5,6 +5,7 @@ import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 import App from './App'
 import router from './router'
+import axios from "axios"
 import { TabContainer, TabContainerItem ,Navbar,Popup,Switch,MessageBox,Toast,Field ,Picker  } from 'mint-ui';
 Vue.component(Navbar.name, Navbar);
 Vue.component(TabContainer.name, TabContainer);
@@ -20,9 +21,12 @@ Vue.config.productionTip = false
 Vue.use(MintUI)
 
 /* eslint-disable no-new */
+Vue.prototype.dataApi = require('./dataApi').default
 new Vue({
   el: '#app',
   router,
+  axios,
   components: { App },
   template: '<App/>'
 })
+

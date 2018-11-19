@@ -1,7 +1,45 @@
 <template>
   <div>
       <div class="one_se">
+          <div class="one_se_warp">
+          <div class="one_se_tab">
+              <img src='../../../assets/taba.png' alt="" v-if="imsg=='a'">
+              <img src='../../../assets/tabb.png' alt="" v-if="imsg=='b'">
 
+              
+            <div class="one_se_taba" @click="gimsa">
+              
+            </div>
+            <div class="one_se_tabb" @click="gimsb">
+                
+            </div>
+          </div>
+          <div class="dibu">
+              <div class="dibuone" v-if="msg=='a'">
+                  <span>选择收货地址</span>
+                    <i class="iconfont icon-right"></i>
+              </div>
+              <div class="dibuoneb" v-if="msg=='b'">
+                   <i class="iconfont icon-Group-"></i>
+                   <span>秋溢路288号东冠高新科技园1号楼1702</span>
+                     <i class="iconfont icon-right"></i>
+              </div>
+              <div  class="dibuonec" v-if="msg=='c'">
+                  <div class="dibuonec_img">
+                       <img src="../../../assets/logo.png" alt="">
+                  </div>
+                   <div class="dibuonec_con">
+                       <p>水天一色生鲜店 <i class="iconfont icon-right"></i></p>
+                       <p>营业时间：9:00-19:00</p>
+                   </div>
+                    
+            
+               
+                
+              </div>
+
+          </div>
+      </div>
       </div>
       <div>
           <ul class="warp">
@@ -138,9 +176,21 @@ export default {
   name: 'Querendingdan',
       data () {
     return {
-      msg: 'moban',
+      msg: 'a',
       popupVisible:false,
+       imsg:'a',
+     
     }
+  },
+  methods:{
+      gimsa(){
+          this.imsg='a'
+          this.msg='a'
+      },
+      gimsb(){
+           this.imsg='b'
+            this.msg='c'
+      }
   }
   
 }

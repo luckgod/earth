@@ -1,8 +1,145 @@
 .one_se{
     width: 100vw;
     height: 2.87rem;
+    box-sizing: border-box;
+    padding-top: 0.4rem;  
+   background: linear-gradient(#f5a826, #fbd690);
+}
+.one_se_warp{
+    width: 89vw;
+    height: 2.1rem;
+   
+    margin: 0 auto;
    
 }
+.one_se_tab{
+    width: 89vw;
+   
+    font-size: 0.3rem;
+    overflow: hidden;
+   position: relative;
+}
+.one_se_tab img{
+    width: 89vw;
+    height: 0.6rem;
+    margin-bottom: -0.04rem;
+}
+.one_se_taba{
+float: left;
+width: 50%;
+height: 0.6rem;
+
+text-align: center;
+
+box-sizing: border-box;
+position: absolute;
+top: 0;
+left:0;
+}
+.one_se_tabb{
+float: left;
+width: 50%;
+text-align: center;
+height: 0.6rem;
+line-height: 0.57rem;
+
+box-sizing: border-box;
+position: absolute;
+top: 0;
+right: 0;
+}
+.dibuone{
+    font-size: 0.36rem;
+    height: 1.5rem;
+    background: #ffffff;
+   line-height: 1.5rem;
+   margin-right:-0.1rem;
+   text-indent: 0.4rem;
+   color: #9B9B9B;
+}
+.dibuone i{
+    float: right;
+    padding-right: 0.4rem;
+}
+.dibuoneb{
+   
+    height: 1.5rem;
+    background: #ffffff;
+    
+   margin-right:-0.1rem;
+  
+   color: #9B9B9B;
+}
+.dibuoneb span{
+font-size: 0.26rem;
+display: inline-block;
+width: 4.4rem;
+overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+
+
+}
+.dibuoneb i:nth-child(1){
+    padding-left: 0.4rem;
+    color: #5BB54D;
+   
+}
+.dibuoneb i:nth-child(3){
+   line-height: 1.5rem;
+    
+    float: right;
+   padding-right: 0.4rem;
+}
+
+.dibuonec {
+    
+    height: 1.5rem;
+    background: #ffffff;
+   margin-left:-0.1rem;
+  
+}
+.dibuonec_img{
+    height: 1.5rem;
+    width:0.88rem;
+   
+    float: left;
+    margin-left: 0.74rem;
+}
+.dibuonec_img img{
+    width: 0.88rem;
+    height: 0.88rem;
+    border-radius:0.02rem;
+    margin-top: 0.34rem; 
+}
+.dibuonec span{
+
+}
+.dibuonec_con{
+    height: 1.5rem;
+    width:4rem;
+    
+    float: left;
+    text-indent: 0.3rem;
+}
+.dibuonec_con p:nth-child(1){
+    line-height: 0.9rem;
+    font-size: 0.36rem;
+}
+.dibuonec_con p:nth-child(2){
+    line-height: 0.45rem;
+    font-size: 0.24rem;
+    color: #9B9B9B;
+}
+
+
+
+
+
+
+
+
+
 .one_img_oul{
     width: 3.2rem;
     height: 1rem;
