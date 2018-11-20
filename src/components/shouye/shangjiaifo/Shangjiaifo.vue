@@ -1,6 +1,14 @@
 <template>
   <div>
-
+ <div class="tabheader">
+     <div class="tabheader_fanhui" @click="jumpa">
+         <i  class="iconfont icon-left "></i>
+     </div>
+          <span class="tabheader_con">太阳公社水天成分店</span>
+          <router-link class="tabheader_del" to='quanbumendian' tag="div">
+              <span>全部门店</span>
+          </router-link>
+      </div>
     <div class="tab">
 
    
@@ -124,7 +132,6 @@
                     <div class="youhuijuanneifenge">
                         <div class="youhuijuanmianzhi">￥10</div>
                         <div class="youhuijuanbtn" >领取</div>
-                        
                     </div>
                     <div class="flra">
                         <p class="youhuijuanmainshua">太阳公社10元新人红包</p>
@@ -193,10 +200,16 @@ export default {
     }
     
   },
+  methods: {
+      jumpa() {
+          this.$router.go(-1)
+      }
+  },
   mounted:function(){
      
       
      this._data.active=this.$route.query.num
+    
   },
   computed: {
     

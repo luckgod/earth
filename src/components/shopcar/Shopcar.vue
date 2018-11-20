@@ -1,5 +1,11 @@
 <template>
   <div>
+      <div class="tabheader">
+          <span class="tabheader_con">购物车</span>
+          <div class="tabheader_del">
+              <span>删除</span>
+          </div>
+      </div>
       <div class="one_se">
           <div class="one">
               <div>
@@ -11,7 +17,6 @@
                                     <label>
                                         <input type="checkbox" name="sex" value="" />
                                         <div class="option"></div><!--该div盛放的是优化后的按钮图片-->
-                                    
                                     </label>
                                 </div>
                             </div> 

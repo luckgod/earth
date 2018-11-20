@@ -6,6 +6,8 @@ import 'mint-ui/lib/style.css'
 import App from './App'
 import router from './router'
 import axios from "axios"
+import store from './store/'
+
 import { TabContainer, TabContainerItem ,Navbar,Popup,Switch,MessageBox,Toast,Field ,Picker  } from 'mint-ui';
 Vue.component(Navbar.name, Navbar);
 Vue.component(TabContainer.name, TabContainer);
@@ -26,6 +28,7 @@ new Vue({
   el: '#app',
   router,
   axios,
+  store,
   components: { App },
   template: '<App/>'
 })

@@ -1,3 +1,24 @@
+.tabheader{
+width: 100vw;
+height: 0.8rem;
+
+text-align: center;
+box-shadow:0 0 5px #4a4a4a87;
+}
+.tabheader_con{
+    font-size: 0.32rem;
+    line-height: 0.8rem;
+
+    padding-left:45%; 
+    float: left;
+}
+.tabheader_del{
+    font-size: 0.24rem;
+    line-height: 0.8rem;
+    padding-right: 0.6rem;
+    color: #163300;
+    float: right;
+}
 /* anniu */
 label {                 /*设置label的样式*/
     width: 100%;
@@ -133,8 +154,9 @@ font-size: 0.36rem;
 
 .thre_sea img{
     width: 66vw;
-    height: 0.28rem;
-   padding-left: 0.86rem;
+
+    height: 0.38rem;
+   padding-left: 1.2rem;
 }
 .proimg img{
    padding-left: 0.12rem;
@@ -161,18 +183,13 @@ font-size: 0.36rem;
     color: #e9aa74;
 }
 .liea{
-    width: 80vw;
+    width: 72vw;
 margin: 0.4rem auto;
 display: flex;
 justify-content: space-between;
 
 }
-.liea{
-   
-}
-.liea{
-    
-}
+
 .four_se{
     width: 100vw;
     position: fixed;

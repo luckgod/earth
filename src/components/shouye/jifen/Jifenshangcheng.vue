@@ -1,5 +1,14 @@
 <template>
   <div>
+    <div class="tabheader">
+     <div class="tabheader_fanhui" @click="fanhui">
+         <i  class="iconfont icon-left " ></i>
+     </div>
+          <span class="tabheader_con" >积分商城</span>
+          <router-link  to='jiaoyimingxi'  class="tabheader_del" tag="div" >
+              <span>积分明细</span>
+          </router-link>
+      </div>
     <div class="dangqianjinfen">
       <div class="dangqianjinfenl">
         <span class="dangqianjinfenls">688</span>
@@ -65,8 +74,15 @@ export default {
   name: 'Jifenshangcheng',
       data () {
     return {
-      msg: 'moban'
+      msg: 'moban',
+     
     }
+  },
+  methods:{
+     fanhui(){
+        this.$router.go(-1)
+        
+     }
   }
   
 }

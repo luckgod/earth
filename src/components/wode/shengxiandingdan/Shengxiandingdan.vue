@@ -1,5 +1,14 @@
 <template>
   <div>
+       <div class="tabheader">
+     <div class="tabheader_fanhui" @click="jumpa">
+         <i  class="iconfont icon-left "></i>
+     </div>
+          <span class="tabheader_con">生鲜订单</span>
+          <div class="tabheader_del" >
+             <i  class="iconfont icon-kefu1"></i>
+          </div>
+      </div>
       <div class="warp">
 
        <div class="bg">
@@ -406,7 +415,11 @@ export default {
             message: '确认取消订单?',
             showCancelButton: true
             });
+      },
+      jumpa(){
+          this.$router.go(-1)
       }
+
   }
   
 }

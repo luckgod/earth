@@ -6,7 +6,7 @@
        <span class="weizhi">德信产业园</span>
        <i class="iconfont icon-xiangxia smell"></i>
      </div>
-     <div class="flr ser" @click="jumpa">
+     <div class="flr ser" @click="jumpa" to='' >
       <input type="text" placeholder="搜索你想要的商品">
      </div>
      <div class="twose">
@@ -14,11 +14,11 @@
           <span class="twosela">1200积分</span>
           <span class="twoselb">=12元</span>
         </div>
-        <div class="flr twoser" @click="jumph">
+        <router-link class="flr twoser" to="fukuanma" tag="div">
             <i class="iconfont icon-wodeyouhuijuan smell"></i>
             <span>会员码</span>
             
-        </div>
+        </router-link>
     </div>
    </div>
     
@@ -32,9 +32,9 @@
   <div class="card">
     <div class="fll">
       <ul>
-        <li class="card_hea"  @click="jumpb">
+        <router-link  to="Quanbumendian" class="card_hea" tag="li">
           <span>太阳公社水天成分店 <i class="iconfont icon-right "></i></span>
-        </li>
+        </router-link>
         <li class="card_se">
           <img src="../../assets/buluo.jpg" alt=""  @click="jumpba">
           <span  @click="jumpba" class='cspan'>4.8分</span>
@@ -193,7 +193,7 @@
   </div>
 </div>
 <!-- 限时秒杀 -->
-<div class="xianshimiaosha neiyinying">
+<div class="xianshimiaosha neiyinying" >
   <img src="../../assets/lunbosucia1.jpg" alt="" @click="jumpe">
   <div class="xianshi_dingwei">
     <div class="miaosha_pro">
@@ -218,9 +218,9 @@
   </div>
   </div>
 </div>
+</div>
 
-
-  </div>
+ 
   
 </template>
 
@@ -250,9 +250,7 @@ export default {
     jumpa(){
       this.$router.push({path:'/shangpinsousu'})
     },
-    jumpb(){
-      this.$router.push({path:'/Shangjiaifo',query:{num:'tab-container1'}})
-    },
+   
      jumpba(){
       this.$router.push({path:'/Shangjiaifo',query:{num:'tab-container2'}})
     },
@@ -274,10 +272,8 @@ export default {
      jumpf(){
       this.$router.push({path:'/jifenshangcheng'})
     },
-    jumph(){
-       this.$router.push({path:'/fukuanma'})
-    },
-    async  fetchData(){
+ 
+    fetchData(){
     
       console.log(this.dataApi)
      this.dataApi.zajax('selectOperate',{operType:'TW'},

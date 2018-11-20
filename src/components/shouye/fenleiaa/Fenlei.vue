@@ -85,6 +85,58 @@
             </li>
         </ul>
     </div>
+    <div class="proa">
+        <ul class="proaoul">
+            <!-- style="border:1px solid black" -->
+            <li class="proaoula"><img src="../../../assets/logo.png" alt="" class="proaomg"></li>
+            <li class="proaoulb">
+                <ul>
+                    <li class="proatit"><span >赣南高级脐橙2个</span></li>
+                    <li class="proayishou"><span >商品简介-----</span></li>
+                    <li class="proaqian"><span >¥8.80/份</span><i class="iconfont icon-gouwuche ziti"></i></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="proa">
+        <ul class="proaoul">
+            <!-- style="border:1px solid black" -->
+            <li class="proaoula"><img src="../../../assets/logo.png" alt="" class="proaomg"></li>
+            <li class="proaoulb">
+                <ul>
+                    <li class="proatit"><span >赣南高级脐橙2个</span></li>
+                    <li class="proayishou"><span >商品简介-----</span></li>
+                    <li class="proaqian"><span >¥8.80/份</span><i class="iconfont icon-gouwuche ziti"></i></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="proa">
+        <ul class="proaoul">
+            <!-- style="border:1px solid black" -->
+            <li class="proaoula"><img src="../../../assets/logo.png" alt="" class="proaomg"></li>
+            <li class="proaoulb">
+                <ul>
+                    <li class="proatit"><span >赣南高级脐橙2个</span></li>
+                    <li class="proayishou"><span >商品简介-----</span></li>
+                    <li class="proaqian"><span >¥8.80/份</span><i class="iconfont icon-gouwuche ziti"></i></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="proa">
+        <ul class="proaoul">
+            <!-- style="border:1px solid black" -->
+            <li class="proaoula"><img src="../../../assets/logo.png" alt="" class="proaomg"></li>
+            <li class="proaoulb">
+                <ul>
+                    <li class="proatit"><span >赣南高级脐橙2个</span></li>
+                    <li class="proayishou"><span >商品简介-----</span></li>
+                    <li class="proaqian"><span >¥8.80/份</span><i class="iconfont icon-gouwuche ziti"></i></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
   </div>
   </div>
    </div>
