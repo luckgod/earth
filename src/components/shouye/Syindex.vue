@@ -275,16 +275,17 @@ export default {
  
     fetchData(){
     
-      console.log(this.dataApi)
-     this.dataApi.zajax('selectOperate',{operType:'TW'},
-        res =>{
+      
+      this.dataApi.ajax('moveAppHome',{
+        localPrecision:'1',
+				localDimension:'2'
+      },res =>{
           console.log(res)
-        }
-        )
+      })
     }
 },
 created:function(){
-  
+  this.fetchData()
 }
 }
 

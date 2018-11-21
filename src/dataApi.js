@@ -1,4 +1,4 @@
-﻿import axios from 'axios'
+import axios from 'axios'
 import CryptoJS from 'crypto-js'
 
 import Vue from 'vue'
@@ -88,16 +88,20 @@ function cryptData(data,act) {
     data = data || {};
     let reqChannel = 'web';
     let reqToken = generateMixed(32);
-    if (localStorage.getItem('permission')) {
-        data.reqUser = JSON.parse(localStorage.getItem('permission')).adminCode;
-        data.reqToken = JSON.parse(localStorage.getItem('permission')).adminToken;
+    // if (localStorage.getItem('permission')) {
+    //     data.reqUser = JSON.parse(localStorage.getItem('permission')).adminCode;
+    //     data.reqToken = JSON.parse(localStorage.getItem('permission')).adminToken;
 
-    }else{
-         data.reqUser = 1;
-         data.reqToken=reqToken
-         location.hash = '/login';
-    }
+    // }else{
+    //      data.reqUser = 1;
+    //      data.reqToken=reqToken
+    //      location.hash = '/login';
+    // }
     
+    //默认数据
+    data.reqToken='2cdc8e4007d54b5683bfef37bedc7c7c';
+    data.reqUser='0000000018';
+
     let AesKey = generateMixed(16);
     data.reqChannel = reqChannel;
     data.reqIdent='D';
@@ -190,8 +194,8 @@ let showMessage = function (res) {
  * 数据接口
  */
 
-let zajax = function (act, data, callback, progressFunc) {
-   //console.log(data)
+let ajax = function (act, data, callback, progressFunc) {
+  
     return axios({
         method: 'post',
         url: '/gateWay',
@@ -206,12 +210,12 @@ let zajax = function (act, data, callback, progressFunc) {
             progressFunc(progressEvent)
         }
     }).then(response => {
-        let res = response.data.params;
-        if (res.pageNum=='0') {     //分页0条时pageNum=0
-            res.pageNum=1
-        }
+//         let res = response.data.params;
+//         if (res.pageNum=='0') {     //分页0条时pageNum=0
+//             res.pageNum=1
+//         }
         callback(res)
-        showMessage(res)
+        // showMessage(res)
     }).catch(response => {
         if (response instanceof Error) {
             // Something happened in setting up the request that triggered an Error
@@ -293,7 +297,7 @@ function removeProperty(object){
 };
 
 export default {
-    zajax: zajax,
+    ajax: ajax,
     upload:upload,
     md5:md5
 }
