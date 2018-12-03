@@ -11,8 +11,8 @@
      </div>
      <div class="twose">
         <div class="fll twosel" @click="jumpf">
-          <span class="twosela">1200积分</span>
-          <span class="twoselb">=12元</span>
+          <span class="twosela">{{res.integralBal}}积分</span>
+          <span class="twoselb">={{res.amtBal}}元</span>
         </div>
         <router-link class="flr twoser" to="fukuanma" tag="div">
             <i class="iconfont icon-wodeyouhuijuan smell"></i>
@@ -24,29 +24,28 @@
     
     <!-- 轮播 -->
   <mt-swipe :auto="4000" class="lunbo"  :show-indicators="true">
-    <mt-swipe-item class="lunboli"><img src="../../assets/lunbosucia1.jpg" alt=""></mt-swipe-item>
-    <mt-swipe-item class="lunboli"><img src="../../assets/lunbosucia1.jpg" alt=""></mt-swipe-item>
-    <mt-swipe-item class="lunboli"><img src="../../assets/lunbosucia1.jpg" alt=""></mt-swipe-item>
+    <mt-swipe-item class="lunboli" v-for="item  in res.banners" ><img :src='item.operImage' alt="" ></mt-swipe-item>
+   
   </mt-swipe>
   <!-- 卡片 -->
   <div class="card">
     <div class="fll">
       <ul>
         <router-link  to="Quanbumendian" class="card_hea" tag="li">
-          <span>太阳公社水天成分店 <i class="iconfont icon-right "></i></span>
+          <span> <span v-html="storeName"></span>  <i class="iconfont icon-right "></i></span>
         </router-link>
         <li class="card_se">
           <img src="../../assets/buluo.jpg" alt=""  @click="jumpba">
-          <span  @click="jumpba" class='cspan'>4.8分</span>
+          <span  @click="jumpba" class='cspan'>{{evaluateStar}}分</span>
           <span  @click="jumpbc" class='cardjuan'>劵</span>
-          <span  @click="jumpbc">¥10</span>
-          <span  @click="jumpbc">¥20</span>  
+          <span  @click="jumpbc">¥{{couponAmta}}</span>
+          <span  @click="jumpbc">¥{{couponAmtb}}</span>  
         </li>
       </ul>
     </div>
     <div class="flr card_rimg">
-      <img src="../../assets/logo.png" alt="">
-      <span class="chuxian">休息中</span>
+      <img :src="storeIcon" alt="">
+      <!-- <span class="chuxian">休息中</span> -->
     </div>
   </div>  
   <!-- 分类 -->
@@ -93,13 +92,13 @@
 <div class="miaosha">
   <div class="miaosha_hea"> 
     <ul>
-      <li class="fll miaosha_hea_l">
+      <li class="fll miaosha_hea_l" >
         <span>秒杀商品</span>
-        <span class="miaosha_hea_b">02</span>
+        <span class="miaosha_hea_b" >02</span>
         <span>:</span>
         <span class="miaosha_hea_b">02</span>
         <span>:</span>
-        <span class="miaosha_hea_b">02</span>
+        <span class="miaosha_hea_b">{{minutes}}</span>
         
       </li>
       <li class="flr miaosha_hea_r" @click="jumpc">
@@ -236,7 +235,18 @@ export default {
   name: 'Syindex',
   data () {
     return {
-      msg: 'moban'
+      res:'',
+      Mshijian:'',
+      storeCode:'',
+      promoCode:'',
+      storeName:'',
+      evaluateStar:'',
+      storeIcon:'',
+      couponAmta:'',
+      couponAmtb:'',
+      hours:'',
+      minutes:'',
+      seconds:'',
     }
   },
   methods:{
@@ -272,20 +282,73 @@ export default {
      jumpf(){
       this.$router.push({path:'/jifenshangcheng'})
     },
- 
     fetchData(){
-    
-      
-      this.dataApi.ajax('moveAppHome',{
-        localPrecision:'1',
-				localDimension:'2'
-      },res =>{
-          console.log(res)
-      })
-    }
+          this.dataApi.ajax('moveAppHome',{localPrecision:'120.231784',localDimension:'30.197081',},res=>{
+            console.log(res)
+           
+            this.res=res
+            this.Mshijian=res.vegetMsPromotionVos[0].promoEndTime
+            this.storeCode=res.vegetStoreVo.storeCode
+            this.promoCode=res.vegetMsPromotionVos[0].promoCode
+            this.storeName=res.vegetStoreVo.storeName
+            this.evaluateStar=res.vegetStoreVo.evaluateStar
+            this.storeIcon=res.vegetStoreVo.storeIcon
+            this.couponAmta=res.vegetStoreVo.vegetCouponVos[0].couponAmt
+            this.couponAmtb=res.vegetStoreVo.vegetCouponVos[1].couponAmt
+            this.miaoshao()
+          })
+        },
+        // 
+    miaoshao(){
+          //  console.log(this.Mshijian)  
+          
+          var date2=new Date(this.Mshijian)
+          setInterval(function(){
+           var date1=new Date()	
+          
+          
+          var date3=date2.getTime()-date1.getTime()  //时间差的毫秒数
+       
+          //计算出相差天数
+          var days=Math.floor(date3/(24*3600*1000))
+          //计算出小时数
+          var leave1=date3%(24*3600*1000)    //计算天数后剩余的毫秒数
+          var hours=Math.floor(leave1/(3600*1000))
+            // console.log(hours)
+            
+           //计算相差分钟数
+           var leave2=leave1%(3600*1000)        //计算小时数后剩余的毫秒数
+           var minutes=Math.floor(leave2/(60*1000))
+          //计算相差秒数
+           var leave3=leave2%(60*1000)      //计算分钟数后剩余的毫秒数
+           var seconds=Math.round(leave3/1000)
+            // console.log(" 相差 "+days+"天 "+hours+"小时 "+minutes+" 分钟"+seconds+" 秒")
+            this.hours=hours
+            this.minutes=minutes
+           this.seconds=seconds
+          //  console.log(this.seconds)
+           },1000)
+        
+         
+        this.dataApi.ajax('promotionGoods',{storeCode:this.storeCode,promoCode:this.promoCode,},res=>{
+             console.log(res)
+
+           
+           })
+    }    
+   
 },
-created:function(){
-  this.fetchData()
+
+mounted() {
+ 
+  
+},
+created(){
+   this.fetchData()
+   
+},
+computed:{
+      
 }
 }
 

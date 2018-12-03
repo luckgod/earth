@@ -210,7 +210,7 @@ let ajax = function (act, data, callback, progressFunc) {
             progressFunc(progressEvent)
         }
     }).then(response => {
-//         let res = response.data.params;
+         let res = response.data.params;
 //         if (res.pageNum=='0') {     //分页0条时pageNum=0
 //             res.pageNum=1
 //         }

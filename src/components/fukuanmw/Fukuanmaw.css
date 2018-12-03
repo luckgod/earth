@@ -100,7 +100,8 @@ bg{
     width: 1.6rem;
     float: left;
     border-right:2px  dashed #ffffff;
-    padding-left: 0.2rem;
+    padding-left: 0.4rem;
+    padding-right:0.4rem; 
 }
 .youhuijuanmainshua{
 padding-top:0.1rem;     

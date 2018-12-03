@@ -110,7 +110,7 @@
                         </li>
                      </ul>
                  </li>
-                  <li :class="{pl:true}"  >菜很好，很新鲜，味道很不错！</li>
+                  <li :class="{pl:true}" >菜很好，很新鲜，味道很不错！</li>
                  
                  <li>
                      <ul>
